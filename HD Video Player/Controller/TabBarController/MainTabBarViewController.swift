@@ -6,21 +6,12 @@
 //
 
 import UIKit
-import SideMenu
+
 class MainTabBarViewController: UITabBarController {
-    
-    var menu:SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menu = SideMenuNavigationController(rootViewController: menulistcontroller())
-        menu?.leftSide = true
-        menu?.setNavigationBarHidden(true, animated: false)
-        SideMenuManager.default.leftMenuNavigationController = menu
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-    }
-    @IBAction func menu(_ sender: UIBarButtonItem) {
-        present(menu!, animated: true)
+        
     }
 }
 
@@ -30,6 +21,8 @@ class menulistcontroller: UITableViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuItemController", bundle: nil).self, forCellReuseIdentifier: "menuCell")
     }
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5

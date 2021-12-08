@@ -23,6 +23,7 @@
 		22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */; };
 		22CD5CCA272BEB9F00E5935A /* FolderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */; };
 		22CD5CCD272BEBAB00E5935A /* RecentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */; };
+		22FD1DF027607932005C4367 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD1DEF27607932005C4367 /* Model.swift */; };
 		7B3B90D3B052CA1162C75269 /* Pods_HD_Video_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D0ABFBFC6F187AEF852798 /* Pods_HD_Video_Player.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
 		22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewCell.swift; sourceTree = "<group>"; };
 		22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewCell.swift; sourceTree = "<group>"; };
+		22FD1DEF27607932005C4367 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8CF525B18247C157F137A1BD /* Pods-HD Video Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HD Video Player.debug.xcconfig"; path = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D0ABFBFC6F187AEF852798 /* Pods_HD_Video_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HD_Video_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 		2249CC41272BD4420067A98D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22FD1DEF27607932005C4367 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */,
 				22BE8A22272AC8C300539161 /* AppDelegate.swift in Sources */,
 				2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */,
+				22FD1DF027607932005C4367 /* Model.swift in Sources */,
 				2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */,
 				22CD5CCA272BEB9F00E5935A /* FolderViewCell.swift in Sources */,
 				22220378272C1D9C00D08C2E /* MenuItemController.swift in Sources */,

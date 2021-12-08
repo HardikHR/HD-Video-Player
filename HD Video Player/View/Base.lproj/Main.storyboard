@@ -30,15 +30,15 @@
                                                 <constraint firstAttribute="width" constant="140" id="aWc-Wt-oTc"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VID-202100178-WA0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-ZF-NSp">
-                                            <rect key="frame" x="168" y="18" width="190.66666666666663" height="20.666666666666671"/>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="VID-202100178-WA0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-ZF-NSp">
+                                            <rect key="frame" x="159" y="18" width="181.33333333333337" height="23"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10/2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-0n-ey6">
-                                            <rect key="frame" x="272" y="38.666666666666664" width="85.666666666666686" height="20.333333333333336"/>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <rect key="frame" x="263" y="41" width="76.666666666666686" height="18"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -66,7 +66,7 @@
                                     <constraints>
                                         <constraint firstItem="Lzs-0n-ey6" firstAttribute="top" secondItem="EzI-ZF-NSp" secondAttribute="bottom" id="0Uz-pf-176"/>
                                         <constraint firstItem="NmO-uB-9nr" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="21" id="2pC-8P-qTS"/>
-                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="122" id="3mT-jX-7ks"/>
+                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="113" id="3mT-jX-7ks"/>
                                         <constraint firstItem="Lzs-0n-ey6" firstAttribute="top" secondItem="EzI-ZF-NSp" secondAttribute="bottom" id="A6l-NR-5KJ"/>
                                         <constraint firstItem="Cwg-xH-cPu" firstAttribute="top" secondItem="Lzs-0n-ey6" secondAttribute="bottom" constant="22" id="CnB-PO-iDI"/>
                                         <constraint firstItem="QsW-ee-egc" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="5" id="G0p-bY-PZd"/>
@@ -74,7 +74,7 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Cwg-xH-cPu" secondAttribute="bottom" constant="15.5" id="L4x-yM-1Hc"/>
                                         <constraint firstItem="EzI-ZF-NSp" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="topMargin" constant="7" id="Sv3-fY-Oun"/>
                                         <constraint firstItem="QsW-ee-egc" firstAttribute="leading" secondItem="VRr-Qa-bu5" secondAttribute="leading" constant="10" id="fBu-bh-REP"/>
-                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="18" id="g89-Ad-46w"/>
+                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="9" id="g89-Ad-46w"/>
                                         <constraint firstItem="Cwg-xH-cPu" firstAttribute="trailing" secondItem="VRr-Qa-bu5" secondAttribute="trailingMargin" id="h0M-7w-5Rj"/>
                                         <constraint firstAttribute="bottom" secondItem="QsW-ee-egc" secondAttribute="bottom" constant="5" id="ze9-Z6-NrN"/>
                                     </constraints>
