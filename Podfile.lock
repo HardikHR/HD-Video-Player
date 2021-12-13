@@ -1,20 +1,16 @@
 PODS:
-  - SideMenu (6.5.0)
-  - TLPhotoPicker (2.1.7)
+  - VersaPlayer (3.0.2)
 
 DEPENDENCIES:
-  - SideMenu
-  - TLPhotoPicker
+  - VersaPlayer
 
 SPEC REPOS:
   trunk:
-    - SideMenu
-    - TLPhotoPicker
+    - VersaPlayer
 
 SPEC CHECKSUMS:
-  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  TLPhotoPicker: ffddcfc335e1475e769b2cdd37af5bbe42ddf0cb
+  VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
 
-PODFILE CHECKSUM: 7cc18e6a783a8cfa8b7e767f67ac4d3e7afed5e5
+PODFILE CHECKSUM: a264e1b75555f39b5e43a0ee0499be317eb0cc3a
 
 COCOAPODS: 1.8.4

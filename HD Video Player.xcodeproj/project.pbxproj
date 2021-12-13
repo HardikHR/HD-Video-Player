@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22220378272C1D9C00D08C2E /* MenuItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22220376272C1D9C00D08C2E /* MenuItemController.swift */; };
-		2222037D272C1DEC00D08C2E /* HideVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222037B272C1DEC00D08C2E /* HideVideoViewController.swift */; };
-		2222037E272C1DEC00D08C2E /* HideVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2222037C272C1DEC00D08C2E /* HideVideoViewController.xib */; };
-		2222038C272C21B900D08C2E /* ManuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222038B272C21B900D08C2E /* ManuViewController.swift */; };
-		2249CC24272BB47C0067A98D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC23272BB47C0067A98D /* MainTabBarViewController.swift */; };
+		2211B9262763556500EE8F3B /* HIdeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */; };
+		223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454AB2762070E0033B24D /* MainTabBarViewController.swift */; };
+		223454C527620BC80033B24D /* MenuItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454C427620BC80033B24D /* MenuItemController.swift */; };
 		2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC46272BD5790067A98D /* VideoViewController.swift */; };
 		2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC49272BD5A00067A98D /* FolderViewController.swift */; };
 		2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC4C272BD5EF0067A98D /* RecentViewController.swift */; };
@@ -29,11 +27,9 @@
 
 /* Begin PBXFileReference section */
 		1283BCE52EB52192F3CBF410 /* Pods-HD Video Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HD Video Player.release.xcconfig"; path = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.release.xcconfig"; sourceTree = "<group>"; };
-		22220376272C1D9C00D08C2E /* MenuItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemController.swift; sourceTree = "<group>"; };
-		2222037B272C1DEC00D08C2E /* HideVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideVideoViewController.swift; sourceTree = "<group>"; };
-		2222037C272C1DEC00D08C2E /* HideVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HideVideoViewController.xib; sourceTree = "<group>"; };
-		2222038B272C21B900D08C2E /* ManuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuViewController.swift; sourceTree = "<group>"; };
-		2249CC23272BB47C0067A98D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIdeVideoViewController.swift; sourceTree = "<group>"; };
+		223454AB2762070E0033B24D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		223454C427620BC80033B24D /* MenuItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemController.swift; sourceTree = "<group>"; };
 		2249CC46272BD5790067A98D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2249CC49272BD5A00067A98D /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		2249CC4C272BD5EF0067A98D /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				22BE8A27272AC8C300539161 /* Main.storyboard */,
-				2222037C272C1DEC00D08C2E /* HideVideoViewController.xib */,
 				22BE8A2A272AC8C400539161 /* Assets.xcassets */,
 				22BE8A2C272AC8C400539161 /* LaunchScreen.storyboard */,
 			);
@@ -95,9 +90,9 @@
 		22A41E3A272BF606000B760C /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				2249CC23272BB47C0067A98D /* MainTabBarViewController.swift */,
-				2222037B272C1DEC00D08C2E /* HideVideoViewController.swift */,
 				2249CC46272BD5790067A98D /* VideoViewController.swift */,
+				223454AB2762070E0033B24D /* MainTabBarViewController.swift */,
+				2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */,
 				2249CC49272BD5A00067A98D /* FolderViewController.swift */,
 				2249CC4C272BD5EF0067A98D /* RecentViewController.swift */,
 			);
@@ -139,9 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */,
+				223454C427620BC80033B24D /* MenuItemController.swift */,
 				22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */,
-				22220376272C1D9C00D08C2E /* MenuItemController.swift */,
-				2222038B272C21B900D08C2E /* ManuViewController.swift */,
 				22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */,
 			);
 			path = ManuCell;
@@ -224,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BE8A2E272AC8C400539161 /* LaunchScreen.storyboard in Resources */,
-				2222037E272C1DEC00D08C2E /* HideVideoViewController.xib in Resources */,
 				22BE8A2B272AC8C400539161 /* Assets.xcassets in Resources */,
 				22BE8A29272AC8C300539161 /* Main.storyboard in Resources */,
 			);
@@ -279,19 +272,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2249CC24272BB47C0067A98D /* MainTabBarViewController.swift in Sources */,
-				2222037D272C1DEC00D08C2E /* HideVideoViewController.swift in Sources */,
 				2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */,
+				223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */,
 				22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */,
+				223454C527620BC80033B24D /* MenuItemController.swift in Sources */,
+				2211B9262763556500EE8F3B /* HIdeVideoViewController.swift in Sources */,
 				22BE8A22272AC8C300539161 /* AppDelegate.swift in Sources */,
 				2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */,
 				22FD1DF027607932005C4367 /* Model.swift in Sources */,
 				2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */,
 				22CD5CCA272BEB9F00E5935A /* FolderViewCell.swift in Sources */,
-				22220378272C1D9C00D08C2E /* MenuItemController.swift in Sources */,
 				22CD5CCD272BEBAB00E5935A /* RecentViewCell.swift in Sources */,
 				22BE8A24272AC8C300539161 /* SceneDelegate.swift in Sources */,
-				2222038C272C21B900D08C2E /* ManuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

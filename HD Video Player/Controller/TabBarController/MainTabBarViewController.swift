@@ -22,8 +22,6 @@ class menulistcontroller: UITableViewController {
         tableView.register(UINib(nibName: "MenuItemController", bundle: nil).self, forCellReuseIdentifier: "menuCell")
     }
     
-    
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

@@ -6,7 +6,6 @@ target 'HD Video Player' do
   use_frameworks!
 
   # Pods for HD Video Player
-  pod 'SideMenu'
-  pod "TLPhotoPicker"
+  pod 'VersaPlayer'
 
 end

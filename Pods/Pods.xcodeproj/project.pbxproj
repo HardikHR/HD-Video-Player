@@ -7,208 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A572AF5B50DD355EEC388B8C3DEA2B94 /* SideMenu-dummy.m */; };
-		08FF9D655E0597B13AEF7CC46D564D70 /* Pods-HD Video Player-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		095B55F03F70CA4FD181C036600F294F /* TLPhotopickerDataSourcesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288A2DEDD9ED75A544ED6C50DC97AE4 /* TLPhotopickerDataSourcesProtocol.swift */; };
-		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55C4CFF8B6454D0792E4D69D981E2A /* SideMenuTransitionController.swift */; };
-		0D7B3387FC98069F708509857793C0A1 /* TLCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC895B894F524D2AF3AE3C22F9BD0A86 /* TLCollectionTableViewCell.swift */; };
-		23C8D72311B6C1B52818D27589B56AC3 /* TLPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B022A039A7550D21656E9FB38AA66 /* TLPhotoLibrary.swift */; };
-		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D3169BB351960B97C88CD5B9CB167 /* SideMenuPresentationController.swift */; };
-		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6FC44FD6C0B576A9C600BA4C7E4746 /* SideMenuPushCoordinator.swift */; };
-		30538C1F38E5EF70B024018F7494941F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269A9506A8085F4B392BE37F78E359D /* SideMenuNavigationController.swift */; };
-		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DE1777B50AB535338107BEED38A352 /* SideMenuPresentationStyle.swift */; };
-		447C9629EC91FD189FFE56B9E485C283 /* TLAssetCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E500CBC5CB12750F168AF4BC3856EC /* TLAssetCollection+Extension.swift */; };
-		4C1509E40A169A383D117834AA5E0DC2 /* TLPhotoPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624FA06D0BEFE08986E172E0E56DCA23 /* TLPhotoPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4CA6090CD30797F26C0B478E0D7A /* Extensions.swift */; };
-		55AB6F2BBB40306068D86E502BBD2EFD /* Pods-HD Video Player-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */; };
-		61C9E86C8CF85A8961EDA93C05C8BC10 /* TLPhotosPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34164D38FE57E40AE2374BF4122B1BB2 /* TLPhotosPickerViewController.xib */; };
-		6D7816C7296031077A3AFB264A8891B0 /* TLPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA930ACAB3A8858155E1FCDE42BE42E /* TLPhotoPicker-dummy.m */; };
-		6E6D4969B3B2FA7FF54D65058407F4FF /* TLAssetPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C145EDE760BC9334488CF89DB9603 /* TLAssetPreviewViewController.swift */; };
-		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A2A97947858756CA2AC8664D0B4603 /* SideMenuManager.swift */; };
-		7ADFA69C16271FD00D70D3B12726D229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		869D826DDC364774EC3DDB5FFEADA433 /* TLAlbumPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5076AF092F4FF0FF137E6790FEF177C /* TLAlbumPopView.swift */; };
-		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2401FFD108F1887DFC6EFCE153D95B /* SideMenuAnimationController.swift */; };
-		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6160EFE77A2E1280DCEC804B4921919 /* SideMenuInteractionController.swift */; };
-		8F31D17F37B24A21EF0969EAD32E3549 /* TLPhotoPickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC591F81C853E0AAC7D6492978F352E5 /* TLPhotoPickerController.bundle */; };
-		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4E583CA8FD5319AB08A06E9A81913 /* Protected.swift */; };
-		A31D43DA95E664EA17A7663931B8D80A /* TLCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2557F3D742EF24E823827C564BD4618 /* TLCollectionTableViewCell.xib */; };
-		A7DCE998E53A08F5D229A78726571275 /* TLBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C268BBFB09D32AC82B8D1F70AE2DF76 /* TLBundle.swift */; };
-		AEDCECD904B089384E157560642CDA46 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62865FBDBF1AEB5911516260BDC70A3 /* SynchronizedDictionary.swift */; };
-		B156A76A1E3CA2ECA7388CFEEF2D6B8F /* TLPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B48DEC61D7680DC89588FC18EC42DEB /* TLPhotoCollectionViewCell.swift */; };
-		B96BFA2C755E989F8A939602D14801EE /* TLAssetsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6117247394D3C845ADDB6CC1FA205 /* TLAssetsCollection.swift */; };
-		C77110A721DA47F4C5C866EBB133406C /* TLPhotosPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD10917FE2150BA506CEA09629B325 /* TLPhotosPickerViewController.swift */; };
-		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FDAB0B356A868F21C6B6B6B6F641A4 /* Initializable.swift */; };
-		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B323B851A1F7D5377F024D53049FB /* UITableViewVibrantCell.swift */; };
-		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537C532836C0F41289115F40A4CD105F /* Print.swift */; };
-		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9623F9822DF00C7CEE477482DAB7E /* Deprecations.swift */; };
-		D3E7F861812FB8FDCA95C1221B3D74CE /* TLPhotoPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8C6E1BE6D4ADFD0CEC50AE8305BF3CD /* TLPhotoPicker.bundle */; };
-		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8C871F907A666C06226787E6699209 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D80A8BF247C16809CEF30F75FE5F77A6 /* TLPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D3C6173F851C2D4C647C9B8874C70E /* TLPhotoCollectionViewCell.xib */; };
-		F313925EFA1264F29E31F91EDE5187D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0673EB55F380658627A9E91E66A97EAC /* VersaTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */; };
+		37AB7673B2F8A11E1F0A2A54B909FE14 /* VersaPlayerControlsBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */; };
+		44BF7F038424284C4CE61B4DEA445520 /* VersaPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */; };
+		5DE87FD811E42DA365121DDF74554236 /* VersaPlayerControlsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */; };
+		61287756EFBA2996D3260030B1BAF688 /* VersaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */; };
+		643129E5EE0A36A11A0E3F910E7380B9 /* VersaPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */; };
+		6D5E68B1D3F98AC02B29048E9C2F0A4B /* VersaPlayerGestureRecieverViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */; };
+		77329E061470AB69BDC53EB84325E023 /* Pods-HD Video Player-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7772293C6E437E5FE57F4BB6C3E8E94B /* VersaSeekbarSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */; };
+		7A68231138CC6232F0E09F4EC224E441 /* VersaPlayerPlaybackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */; };
+		7AEA1FF7F4FEA1642E92E4DF99505FAE /* VersaPlayerPlaybackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */; };
+		89D39450A27C0FE7899B8CEC12CCB3C5 /* VersaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */; };
+		8D0E2122D9A9226EB01FBDE7C8BF513D /* VersaPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904185BE0457AAC8CCE864D37560D94E /* VersaPlayerMediaTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */; };
+		963B24C5EE6EFE98575855B8447B1B98 /* VersaPlayerCaptionStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */; };
+		9C1F5B7FD4BE5DCF9512B2DD2194C548 /* Pods-HD Video Player-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */; };
+		A0B88998ABF08EACF3E13197775EAC11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B7373E6AD247D12FAEBFE7FF17903998 /* VersaPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */; };
+		C11451B3D376298E7566539C19666E07 /* VersaPlayerGestureRecieverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */; };
+		C2E50DD66816FF48681AA4EB82F00DA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DB82B3426A8520371E57B957E113474E /* VersaPlayerDecryptionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */; };
+		E1C734D6207B3AE97DA623C1B2B1FDEE /* VersaStatefulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */; };
+		E59D916E82BD55AFD91A7AB704A3EE45 /* VersaPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */; };
+		FF520F6A7D92410E58C90555D1D20C13 /* VersaPlayerRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		885FF0C1AB4E067FA951BF0F7F9D5AF6 /* PBXContainerItemProxy */ = {
+		8E0B4FAAA670EE27C40EAD7505DCEE9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F9241C3812D02BCBB2AA4D3936BD3909;
-			remoteInfo = TLPhotoPicker;
-		};
-		A960B8B82E185114F9C19C731EBC3691 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
-			remoteInfo = SideMenu;
-		};
-		F3C87605924509F40596B961456776DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E25D4105A6FD573D0B380E936CC9E11;
-			remoteInfo = "TLPhotoPicker-TLPhotoPicker";
+			remoteGlobalIDString = 9C10FCC9230D7F2B427D6CDB50584B25;
+			remoteInfo = VersaPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04053D13B37BBDFB43B2B706E06533D8 /* Pods-HD Video Player.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HD Video Player.modulemap"; sourceTree = "<group>"; };
 		06CBAEDEA38DD607393D53B57BAF8691 /* Pods-HD Video Player-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HD Video Player-Info.plist"; sourceTree = "<group>"; };
-		08A2A97947858756CA2AC8664D0B4603 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerMediaTrack.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerMediaTrack.swift; sourceTree = "<group>"; };
 		155B8ABF7AC18655E68D26AB82FDEADC /* Pods-HD Video Player-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HD Video Player-acknowledgements.markdown"; sourceTree = "<group>"; };
-		16D3C6173F851C2D4C647C9B8874C70E /* TLPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TLPhotoCollectionViewCell.xib; path = TLPhotoPicker/Classes/TLPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		195C145EDE760BC9334488CF89DB9603 /* TLAssetPreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLAssetPreviewViewController.swift; path = TLPhotoPicker/Classes/TLAssetPreviewViewController.swift; sourceTree = "<group>"; };
-		1B2401FFD108F1887DFC6EFCE153D95B /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
-		201F7EFF60A5373BCA0D6EE0421EB5A4 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		21D924B94CB038FB3FA9AAAEE5ABD563 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		2427CA64A4EAA1E32FD2D877A8E9A916 /* TLPhotoPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TLPhotoPicker.modulemap; sourceTree = "<group>"; };
-		28FEBF03C2D5B028D0C55D99B129793A /* TLPhotoPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TLPhotoPicker.framework; path = TLPhotoPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1B022A039A7550D21656E9FB38AA66 /* TLPhotoLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLPhotoLibrary.swift; path = TLPhotoPicker/Classes/TLPhotoLibrary.swift; sourceTree = "<group>"; };
-		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34164D38FE57E40AE2374BF4122B1BB2 /* TLPhotosPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TLPhotosPickerViewController.xib; path = TLPhotoPicker/Classes/TLPhotosPickerViewController.xib; sourceTree = "<group>"; };
-		3A4D3169BB351960B97C88CD5B9CB167 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
-		3D6FC44FD6C0B576A9C600BA4C7E4746 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
-		407E03B57759C09970E6E8A4983F716F /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
-		4288A2DEDD9ED75A544ED6C50DC97AE4 /* TLPhotopickerDataSourcesProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLPhotopickerDataSourcesProtocol.swift; path = TLPhotoPicker/Classes/TLPhotopickerDataSourcesProtocol.swift; sourceTree = "<group>"; };
-		4A860A093CAAEF1ED97538873947BCC5 /* TLPhotoPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TLPhotoPicker-Info.plist"; sourceTree = "<group>"; };
+		2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VersaPlayer.xcconfig; sourceTree = "<group>"; };
+		322741594A02B331256C76702857957D /* VersaPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VersaPlayer-Info.plist"; sourceTree = "<group>"; };
+		3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerExtension.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerExtension.swift; sourceTree = "<group>"; };
+		3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackError.swift; path = VersaPlayer/Classes/Source/Core/Enums/VersaPlayerPlaybackError.swift; sourceTree = "<group>"; };
+		3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerView.swift; path = VersaPlayer/Classes/Source/VersaPlayerView.swift; sourceTree = "<group>"; };
+		3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsCoordinator.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControlsCoordinator.swift; sourceTree = "<group>"; };
+		44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerPlaybackDelegate.swift; sourceTree = "<group>"; };
+		49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaSeekbarSlider.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaSeekbarSlider.swift; sourceTree = "<group>"; };
 		4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HD Video Player.release.xcconfig"; sourceTree = "<group>"; };
-		537C532836C0F41289115F40A4CD105F /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
-		59F3C69B9F1FC356ECC302ED4F0E8E39 /* ResourceBundle-TLPhotoPicker-TLPhotoPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TLPhotoPicker-TLPhotoPicker-Info.plist"; sourceTree = "<group>"; };
 		5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HD Video Player-dummy.m"; sourceTree = "<group>"; };
-		624FA06D0BEFE08986E172E0E56DCA23 /* TLPhotoPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLPhotoPicker-umbrella.h"; sourceTree = "<group>"; };
+		5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerRenderingView.swift; path = VersaPlayer/Classes/Source/Core/Rendering/VersaPlayerRenderingView.swift; sourceTree = "<group>"; };
 		62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HD Video Player-umbrella.h"; sourceTree = "<group>"; };
-		6A8C871F907A666C06226787E6699209 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		6BF4E583CA8FD5319AB08A06E9A81913 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
+		67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VersaPlayer.framework; path = VersaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		73E500CBC5CB12750F168AF4BC3856EC /* TLAssetCollection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TLAssetCollection+Extension.swift"; path = "TLPhotoPicker/Classes/TLAssetCollection+Extension.swift"; sourceTree = "<group>"; };
-		77E6117247394D3C845ADDB6CC1FA205 /* TLAssetsCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLAssetsCollection.swift; path = TLPhotoPicker/Classes/TLAssetsCollection.swift; sourceTree = "<group>"; };
-		7C268BBFB09D32AC82B8D1F70AE2DF76 /* TLBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLBundle.swift; path = TLPhotoPicker/Classes/TLBundle.swift; sourceTree = "<group>"; };
-		8F5DFFAD61C2F3C179743CF455691E7F /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		96A9623F9822DF00C7CEE477482DAB7E /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
-		9B48DEC61D7680DC89588FC18EC42DEB /* TLPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLPhotoCollectionViewCell.swift; path = TLPhotoPicker/Classes/TLPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverViewDelegate.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverViewDelegate.swift; sourceTree = "<group>"; };
+		7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerItem.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerItem.swift; sourceTree = "<group>"; };
+		862FB77C801C2AAB3651B42BBDDD2B8A /* VersaPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VersaPlayer.modulemap; sourceTree = "<group>"; };
+		88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayer.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayer.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A269A9506A8085F4B392BE37F78E359D /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
-		A572AF5B50DD355EEC388B8C3DEA2B94 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VersaPlayer-dummy.m"; sourceTree = "<group>"; };
 		A74731F19D5362C6AF06BB992E360BF8 /* Pods-HD Video Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HD Video Player.debug.xcconfig"; sourceTree = "<group>"; };
-		A8DE1777B50AB535338107BEED38A352 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
-		A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLPhotoPicker.xcconfig; sourceTree = "<group>"; };
-		AC591F81C853E0AAC7D6492978F352E5 /* TLPhotoPickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TLPhotoPickerController.bundle; path = TLPhotoPicker/TLPhotoPickerController.bundle; sourceTree = "<group>"; };
-		AC895B894F524D2AF3AE3C22F9BD0A86 /* TLCollectionTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLCollectionTableViewCell.swift; path = TLPhotoPicker/Classes/TLCollectionTableViewCell.swift; sourceTree = "<group>"; };
-		AF55C4CFF8B6454D0792E4D69D981E2A /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
-		B1327BA35A56B698F43F6BFCF68D67B9 /* TLPhotoPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLPhotoPicker-prefix.pch"; sourceTree = "<group>"; };
-		B6160EFE77A2E1280DCEC804B4921919 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
-		BEA930ACAB3A8858155E1FCDE42BE42E /* TLPhotoPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLPhotoPicker-dummy.m"; sourceTree = "<group>"; };
+		AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-umbrella.h"; sourceTree = "<group>"; };
+		BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerDecryptionDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerDecryptionDelegate.swift; sourceTree = "<group>"; };
+		BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControls.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControls.swift; sourceTree = "<group>"; };
 		C39F89EB0CD77253E0A68D0CFE2F3E71 /* Pods-HD Video Player-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HD Video Player-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5076AF092F4FF0FF137E6790FEF177C /* TLAlbumPopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLAlbumPopView.swift; path = TLPhotoPicker/Classes/TLAlbumPopView.swift; sourceTree = "<group>"; };
-		C62865FBDBF1AEB5911516260BDC70A3 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedDictionary.swift; path = TLPhotoPicker/Classes/SynchronizedDictionary.swift; sourceTree = "<group>"; };
-		C8C6E1BE6D4ADFD0CEC50AE8305BF3CD /* TLPhotoPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TLPhotoPicker.bundle; path = "TLPhotoPicker-TLPhotoPicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D89B323B851A1F7D5377F024D53049FB /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaTimeLabel.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaTimeLabel.swift; sourceTree = "<group>"; };
+		D4DFB2818B93811985FBCE73E5A5D93E /* VersaPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-prefix.pch"; sourceTree = "<group>"; };
 		E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HD_Video_Player.framework; path = "Pods-HD Video Player.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4FD10917FE2150BA506CEA09629B325 /* TLPhotosPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TLPhotosPickerViewController.swift; path = TLPhotoPicker/Classes/TLPhotosPickerViewController.swift; sourceTree = "<group>"; };
-		E4FDAB0B356A868F21C6B6B6B6F641A4 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
-		EBCA4CA6090CD30797F26C0B478E0D7A /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
-		F2557F3D742EF24E823827C564BD4618 /* TLCollectionTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TLCollectionTableViewCell.xib; path = TLPhotoPicker/Classes/TLCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerCaptionStyling.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerCaptionStyling.swift; sourceTree = "<group>"; };
+		E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaStatefulButton.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaStatefulButton.swift; sourceTree = "<group>"; };
+		F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsBehaviour.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerControlsBehaviour.swift; sourceTree = "<group>"; };
+		F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverView.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverView.swift; sourceTree = "<group>"; };
 		FAA3195CB19D253009FDD2573860F722 /* Pods-HD Video Player-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HD Video Player-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		13E51337214014D93AD23A5083F830E6 /* Frameworks */ = {
+		2E1C7BB3BADA03ACE4C7380B5928B515 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B88998ABF08EACF3E13197775EAC11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27F8655F23158E43F997BD71E3D87460 /* Frameworks */ = {
+		4A2CC64D5E9056D7E0B622026E6D923F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30538C1F38E5EF70B024018F7494941F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D8052E72F3E2C558DD97363E0C73E40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7ADFA69C16271FD00D70D3B12726D229 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9D87C2BC8D3C4B8382407D4C6B16014 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F313925EFA1264F29E31F91EDE5187D7 /* Foundation.framework in Frameworks */,
+				C2E50DD66816FF48681AA4EB82F00DA5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		117BA73DBCDF08C38A43DBBBA28F9519 /* SideMenu */ = {
+		51471114C5CE0EDD64529C212D3FF37F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96A9623F9822DF00C7CEE477482DAB7E /* Deprecations.swift */,
-				EBCA4CA6090CD30797F26C0B478E0D7A /* Extensions.swift */,
-				E4FDAB0B356A868F21C6B6B6B6F641A4 /* Initializable.swift */,
-				537C532836C0F41289115F40A4CD105F /* Print.swift */,
-				6BF4E583CA8FD5319AB08A06E9A81913 /* Protected.swift */,
-				1B2401FFD108F1887DFC6EFCE153D95B /* SideMenuAnimationController.swift */,
-				B6160EFE77A2E1280DCEC804B4921919 /* SideMenuInteractionController.swift */,
-				08A2A97947858756CA2AC8664D0B4603 /* SideMenuManager.swift */,
-				A269A9506A8085F4B392BE37F78E359D /* SideMenuNavigationController.swift */,
-				3A4D3169BB351960B97C88CD5B9CB167 /* SideMenuPresentationController.swift */,
-				A8DE1777B50AB535338107BEED38A352 /* SideMenuPresentationStyle.swift */,
-				3D6FC44FD6C0B576A9C600BA4C7E4746 /* SideMenuPushCoordinator.swift */,
-				AF55C4CFF8B6454D0792E4D69D981E2A /* SideMenuTransitionController.swift */,
-				D89B323B851A1F7D5377F024D53049FB /* UITableViewVibrantCell.swift */,
-				5837F6C87B1D3A8EAF9526623A10B170 /* Support Files */,
+				7B2C0CB59F77445F017F7C6E9A7D2E49 /* VersaPlayer */,
 			);
-			name = SideMenu;
-			path = SideMenu;
-			sourceTree = "<group>";
-		};
-		5450A88A2DBB57AB4ACEBA6210F20BE2 /* TLPhotoPicker */ = {
-			isa = PBXGroup;
-			children = (
-				C62865FBDBF1AEB5911516260BDC70A3 /* SynchronizedDictionary.swift */,
-				C5076AF092F4FF0FF137E6790FEF177C /* TLAlbumPopView.swift */,
-				73E500CBC5CB12750F168AF4BC3856EC /* TLAssetCollection+Extension.swift */,
-				195C145EDE760BC9334488CF89DB9603 /* TLAssetPreviewViewController.swift */,
-				77E6117247394D3C845ADDB6CC1FA205 /* TLAssetsCollection.swift */,
-				7C268BBFB09D32AC82B8D1F70AE2DF76 /* TLBundle.swift */,
-				AC895B894F524D2AF3AE3C22F9BD0A86 /* TLCollectionTableViewCell.swift */,
-				9B48DEC61D7680DC89588FC18EC42DEB /* TLPhotoCollectionViewCell.swift */,
-				2F1B022A039A7550D21656E9FB38AA66 /* TLPhotoLibrary.swift */,
-				4288A2DEDD9ED75A544ED6C50DC97AE4 /* TLPhotopickerDataSourcesProtocol.swift */,
-				E4FD10917FE2150BA506CEA09629B325 /* TLPhotosPickerViewController.swift */,
-				FBCC260623E5693E19270BF10A46DF5A /* Resources */,
-				7F3AAD89DBDB7C1FDE5B24A11BF3333F /* Support Files */,
-			);
-			name = TLPhotoPicker;
-			path = TLPhotoPicker;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -219,20 +119,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5837F6C87B1D3A8EAF9526623A10B170 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				21D924B94CB038FB3FA9AAAEE5ABD563 /* SideMenu.modulemap */,
-				201F7EFF60A5373BCA0D6EE0421EB5A4 /* SideMenu.xcconfig */,
-				A572AF5B50DD355EEC388B8C3DEA2B94 /* SideMenu-dummy.m */,
-				407E03B57759C09970E6E8A4983F716F /* SideMenu-Info.plist */,
-				8F5DFFAD61C2F3C179743CF455691E7F /* SideMenu-prefix.pch */,
-				6A8C871F907A666C06226787E6699209 /* SideMenu-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
-			sourceTree = "<group>";
-		};
 		617B1CDB3B942B2E0E3F3D2343C8CD5E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,28 +127,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7F3AAD89DBDB7C1FDE5B24A11BF3333F /* Support Files */ = {
+		7B2C0CB59F77445F017F7C6E9A7D2E49 /* VersaPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				59F3C69B9F1FC356ECC302ED4F0E8E39 /* ResourceBundle-TLPhotoPicker-TLPhotoPicker-Info.plist */,
-				2427CA64A4EAA1E32FD2D877A8E9A916 /* TLPhotoPicker.modulemap */,
-				A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */,
-				BEA930ACAB3A8858155E1FCDE42BE42E /* TLPhotoPicker-dummy.m */,
-				4A860A093CAAEF1ED97538873947BCC5 /* TLPhotoPicker-Info.plist */,
-				B1327BA35A56B698F43F6BFCF68D67B9 /* TLPhotoPicker-prefix.pch */,
-				624FA06D0BEFE08986E172E0E56DCA23 /* TLPhotoPicker-umbrella.h */,
+				88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */,
+				E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */,
+				BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */,
+				F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */,
+				3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */,
+				BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */,
+				3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */,
+				F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */,
+				7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */,
+				7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */,
+				0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */,
+				44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */,
+				3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */,
+				5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */,
+				3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */,
+				49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */,
+				E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */,
+				C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */,
+				CBFEB72080574B78F038EFE960254896 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TLPhotoPicker";
+			name = VersaPlayer;
+			path = VersaPlayer;
 			sourceTree = "<group>";
 		};
-		816BC05794EA0499C4341336212ED4D8 /* Pods */ = {
+		CBFEB72080574B78F038EFE960254896 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				117BA73DBCDF08C38A43DBBBA28F9519 /* SideMenu */,
-				5450A88A2DBB57AB4ACEBA6210F20BE2 /* TLPhotoPicker */,
+				862FB77C801C2AAB3651B42BBDDD2B8A /* VersaPlayer.modulemap */,
+				2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */,
+				A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */,
+				322741594A02B331256C76702857957D /* VersaPlayer-Info.plist */,
+				D4DFB2818B93811985FBCE73E5A5D93E /* VersaPlayer-prefix.pch */,
+				AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/VersaPlayer";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -270,8 +173,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				816BC05794EA0499C4341336212ED4D8 /* Pods */,
-				E0A8BA36D32CD6328565BFC74D72D723 /* Products */,
+				51471114C5CE0EDD64529C212D3FF37F /* Pods */,
+				DD1F1BA599CB2C36BF863628FFB36110 /* Products */,
 				617B1CDB3B942B2E0E3F3D2343C8CD5E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -284,13 +187,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E0A8BA36D32CD6328565BFC74D72D723 /* Products */ = {
+		DD1F1BA599CB2C36BF863628FFB36110 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */,
-				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
-				C8C6E1BE6D4ADFD0CEC50AE8305BF3CD /* TLPhotoPicker.bundle */,
-				28FEBF03C2D5B028D0C55D99B129793A /* TLPhotoPicker.framework */,
+				67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,119 +213,63 @@
 			path = "Target Support Files/Pods-HD Video Player";
 			sourceTree = "<group>";
 		};
-		FBCC260623E5693E19270BF10A46DF5A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F2557F3D742EF24E823827C564BD4618 /* TLCollectionTableViewCell.xib */,
-				16D3C6173F851C2D4C647C9B8874C70E /* TLPhotoCollectionViewCell.xib */,
-				AC591F81C853E0AAC7D6492978F352E5 /* TLPhotoPickerController.bundle */,
-				34164D38FE57E40AE2374BF4122B1BB2 /* TLPhotosPickerViewController.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28761BD3C505CCB36997450A19676357 /* Headers */ = {
+		5DE562DE17B354E6ED8B480CE62C2C73 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */,
+				77329E061470AB69BDC53EB84325E023 /* Pods-HD Video Player-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3318F55D98DF5842F0BD52AA0C0ECECA /* Headers */ = {
+		B5181503FC244CB81550919E3E7C87E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1509E40A169A383D117834AA5E0DC2 /* TLPhotoPicker-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4730F9F24B98B2F286FB4ED389817053 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08FF9D655E0597B13AEF7CC46D564D70 /* Pods-HD Video Player-umbrella.h in Headers */,
+				8D0E2122D9A9226EB01FBDE7C8BF513D /* VersaPlayer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E25D4105A6FD573D0B380E936CC9E11 /* TLPhotoPicker-TLPhotoPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B87AC5219C54D541D775B88FD260B96E /* Build configuration list for PBXNativeTarget "TLPhotoPicker-TLPhotoPicker" */;
-			buildPhases = (
-				7A0BD0EDC067E9D120F47636E5AE5D07 /* Sources */,
-				13E51337214014D93AD23A5083F830E6 /* Frameworks */,
-				40A7E4153AA8E9A8469A1DEE043C5044 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TLPhotoPicker-TLPhotoPicker";
-			productName = "TLPhotoPicker-TLPhotoPicker";
-			productReference = C8C6E1BE6D4ADFD0CEC50AE8305BF3CD /* TLPhotoPicker.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		562F3FDDCFB4F838759E3FACA4994E0C /* Pods-HD Video Player */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 440CDB0C14FC7573850F048F8EC6B131 /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */;
+			buildConfigurationList = 6E5720FDF4B003DD7A8F3B31D9D4B69A /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */;
 			buildPhases = (
-				4730F9F24B98B2F286FB4ED389817053 /* Headers */,
-				1867B0CA205910B9574D621FD69C7B7E /* Sources */,
-				8D8052E72F3E2C558DD97363E0C73E40 /* Frameworks */,
-				F2E5A2E1B58E14FB04D5337DCF5046F9 /* Resources */,
+				5DE562DE17B354E6ED8B480CE62C2C73 /* Headers */,
+				16AF3DB2C0E3AD2D7F8921045A4F8203 /* Sources */,
+				4A2CC64D5E9056D7E0B622026E6D923F /* Frameworks */,
+				303BBC81C36F9D582F24F607CFE9052E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				958550C84B55E55605EF7671FBAB02AE /* PBXTargetDependency */,
-				173CC11766CD564CF161C89A619F1FFF /* PBXTargetDependency */,
+				307189480B3C383CB1613E9AED22EBEE /* PBXTargetDependency */,
 			);
 			name = "Pods-HD Video Player";
 			productName = "Pods-HD Video Player";
 			productReference = E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
+		9C10FCC9230D7F2B427D6CDB50584B25 /* VersaPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92707F899E1CD6FD63DCC66A3882B68C /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildConfigurationList = 3512A841917075A9DA6E79D5D270C8BF /* Build configuration list for PBXNativeTarget "VersaPlayer" */;
 			buildPhases = (
-				28761BD3C505CCB36997450A19676357 /* Headers */,
-				8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */,
-				D9D87C2BC8D3C4B8382407D4C6B16014 /* Frameworks */,
-				E880A6A8817A45BC1BDE085DEC3399E0 /* Resources */,
+				B5181503FC244CB81550919E3E7C87E6 /* Headers */,
+				9107EB9A28E671B1F17DDDDEE8E31F2E /* Sources */,
+				2E1C7BB3BADA03ACE4C7380B5928B515 /* Frameworks */,
+				CBCAFF80E144E4BB1D5D368208B6C4F0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SideMenu;
-			productName = SideMenu;
-			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F9241C3812D02BCBB2AA4D3936BD3909 /* TLPhotoPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5DB6CE4DB4C739321EDC2B32C5718DA /* Build configuration list for PBXNativeTarget "TLPhotoPicker" */;
-			buildPhases = (
-				3318F55D98DF5842F0BD52AA0C0ECECA /* Headers */,
-				FFD9F5584DA914E3EA7ADDCF12CFB8F0 /* Sources */,
-				27F8655F23158E43F997BD71E3D87460 /* Frameworks */,
-				2D1932AF5CA570A9C7788FAEB493DF61 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14C2017490A2A79D7D9756C1EA88105A /* PBXTargetDependency */,
-			);
-			name = TLPhotoPicker;
-			productName = TLPhotoPicker;
-			productReference = 28FEBF03C2D5B028D0C55D99B129793A /* TLPhotoPicker.framework */;
+			name = VersaPlayer;
+			productName = VersaPlayer;
+			productReference = 67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -445,46 +290,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E0A8BA36D32CD6328565BFC74D72D723 /* Products */;
+			productRefGroup = DD1F1BA599CB2C36BF863628FFB36110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				562F3FDDCFB4F838759E3FACA4994E0C /* Pods-HD Video Player */,
-				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
-				F9241C3812D02BCBB2AA4D3936BD3909 /* TLPhotoPicker */,
-				0E25D4105A6FD573D0B380E936CC9E11 /* TLPhotoPicker-TLPhotoPicker */,
+				9C10FCC9230D7F2B427D6CDB50584B25 /* VersaPlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D1932AF5CA570A9C7788FAEB493DF61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3E7F861812FB8FDCA95C1221B3D74CE /* TLPhotoPicker.bundle in Resources */,
-				8F31D17F37B24A21EF0969EAD32E3549 /* TLPhotoPickerController.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40A7E4153AA8E9A8469A1DEE043C5044 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A31D43DA95E664EA17A7663931B8D80A /* TLCollectionTableViewCell.xib in Resources */,
-				D80A8BF247C16809CEF30F75FE5F77A6 /* TLPhotoCollectionViewCell.xib in Resources */,
-				61C9E86C8CF85A8961EDA93C05C8BC10 /* TLPhotosPickerViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E880A6A8817A45BC1BDE085DEC3399E0 /* Resources */ = {
+		303BBC81C36F9D582F24F607CFE9052E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E5A2E1B58E14FB04D5337DCF5046F9 /* Resources */ = {
+		CBCAFF80E144E4BB1D5D368208B6C4F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,86 +318,90 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1867B0CA205910B9574D621FD69C7B7E /* Sources */ = {
+		16AF3DB2C0E3AD2D7F8921045A4F8203 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55AB6F2BBB40306068D86E502BBD2EFD /* Pods-HD Video Player-dummy.m in Sources */,
+				9C1F5B7FD4BE5DCF9512B2DD2194C548 /* Pods-HD Video Player-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A0BD0EDC067E9D120F47636E5AE5D07 /* Sources */ = {
+		9107EB9A28E671B1F17DDDDEE8E31F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */,
-				4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */,
-				C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */,
-				D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */,
-				905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */,
-				08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */,
-				890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */,
-				8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */,
-				77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */,
-				3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */,
-				27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */,
-				3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */,
-				2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */,
-				09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */,
-				C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFD9F5584DA914E3EA7ADDCF12CFB8F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEDCECD904B089384E157560642CDA46 /* SynchronizedDictionary.swift in Sources */,
-				869D826DDC364774EC3DDB5FFEADA433 /* TLAlbumPopView.swift in Sources */,
-				447C9629EC91FD189FFE56B9E485C283 /* TLAssetCollection+Extension.swift in Sources */,
-				6E6D4969B3B2FA7FF54D65058407F4FF /* TLAssetPreviewViewController.swift in Sources */,
-				B96BFA2C755E989F8A939602D14801EE /* TLAssetsCollection.swift in Sources */,
-				A7DCE998E53A08F5D229A78726571275 /* TLBundle.swift in Sources */,
-				0D7B3387FC98069F708509857793C0A1 /* TLCollectionTableViewCell.swift in Sources */,
-				B156A76A1E3CA2ECA7388CFEEF2D6B8F /* TLPhotoCollectionViewCell.swift in Sources */,
-				23C8D72311B6C1B52818D27589B56AC3 /* TLPhotoLibrary.swift in Sources */,
-				6D7816C7296031077A3AFB264A8891B0 /* TLPhotoPicker-dummy.m in Sources */,
-				095B55F03F70CA4FD181C036600F294F /* TLPhotopickerDataSourcesProtocol.swift in Sources */,
-				C77110A721DA47F4C5C866EBB133406C /* TLPhotosPickerViewController.swift in Sources */,
+				89D39450A27C0FE7899B8CEC12CCB3C5 /* VersaPlayer.swift in Sources */,
+				B7373E6AD247D12FAEBFE7FF17903998 /* VersaPlayer-dummy.m in Sources */,
+				963B24C5EE6EFE98575855B8447B1B98 /* VersaPlayerCaptionStyling.swift in Sources */,
+				E59D916E82BD55AFD91A7AB704A3EE45 /* VersaPlayerControls.swift in Sources */,
+				37AB7673B2F8A11E1F0A2A54B909FE14 /* VersaPlayerControlsBehaviour.swift in Sources */,
+				5DE87FD811E42DA365121DDF74554236 /* VersaPlayerControlsCoordinator.swift in Sources */,
+				DB82B3426A8520371E57B957E113474E /* VersaPlayerDecryptionDelegate.swift in Sources */,
+				643129E5EE0A36A11A0E3F910E7380B9 /* VersaPlayerExtension.swift in Sources */,
+				C11451B3D376298E7566539C19666E07 /* VersaPlayerGestureRecieverView.swift in Sources */,
+				6D5E68B1D3F98AC02B29048E9C2F0A4B /* VersaPlayerGestureRecieverViewDelegate.swift in Sources */,
+				44BF7F038424284C4CE61B4DEA445520 /* VersaPlayerItem.swift in Sources */,
+				904185BE0457AAC8CCE864D37560D94E /* VersaPlayerMediaTrack.swift in Sources */,
+				7AEA1FF7F4FEA1642E92E4DF99505FAE /* VersaPlayerPlaybackDelegate.swift in Sources */,
+				7A68231138CC6232F0E09F4EC224E441 /* VersaPlayerPlaybackError.swift in Sources */,
+				FF520F6A7D92410E58C90555D1D20C13 /* VersaPlayerRenderingView.swift in Sources */,
+				61287756EFBA2996D3260030B1BAF688 /* VersaPlayerView.swift in Sources */,
+				7772293C6E437E5FE57F4BB6C3E8E94B /* VersaSeekbarSlider.swift in Sources */,
+				E1C734D6207B3AE97DA623C1B2B1FDEE /* VersaStatefulButton.swift in Sources */,
+				0673EB55F380658627A9E91E66A97EAC /* VersaTimeLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14C2017490A2A79D7D9756C1EA88105A /* PBXTargetDependency */ = {
+		307189480B3C383CB1613E9AED22EBEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "TLPhotoPicker-TLPhotoPicker";
-			target = 0E25D4105A6FD573D0B380E936CC9E11 /* TLPhotoPicker-TLPhotoPicker */;
-			targetProxy = F3C87605924509F40596B961456776DA /* PBXContainerItemProxy */;
-		};
-		173CC11766CD564CF161C89A619F1FFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TLPhotoPicker;
-			target = F9241C3812D02BCBB2AA4D3936BD3909 /* TLPhotoPicker */;
-			targetProxy = 885FF0C1AB4E067FA951BF0F7F9D5AF6 /* PBXContainerItemProxy */;
-		};
-		958550C84B55E55605EF7671FBAB02AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SideMenu;
-			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = A960B8B82E185114F9C19C731EBC3691 /* PBXContainerItemProxy */;
+			name = VersaPlayer;
+			target = 9C10FCC9230D7F2B427D6CDB50584B25 /* VersaPlayer */;
+			targetProxy = 8E0B4FAAA670EE27C40EAD7505DCEE9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		113819366B1B2E3E2EBBA54AB2908133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		201519B3FA3428087107CA0886180A22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -700,11 +528,10 @@
 			};
 			name = Debug;
 		};
-		671D816BCA14C6A40DD63F44285CC804 /* Release */ = {
+		30503DC2253A4DF9F08E30F1E29187B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 201F7EFF60A5373BCA0D6EE0421EB5A4 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -713,22 +540,56 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/VersaPlayer/VersaPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VersaPlayer/VersaPlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
+				MODULEMAP_FILE = "Target Support Files/VersaPlayer/VersaPlayer.modulemap";
+				PRODUCT_MODULE_NAME = VersaPlayer;
+				PRODUCT_NAME = VersaPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		482A7F53C7CE68495B1375C11419E563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VersaPlayer/VersaPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VersaPlayer/VersaPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VersaPlayer/VersaPlayer.modulemap";
+				PRODUCT_MODULE_NAME = VersaPlayer;
+				PRODUCT_NAME = VersaPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -736,23 +597,7 @@
 			};
 			name = Release;
 		};
-		8F6EC4D5FC3B170084DA939BDFB35951 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TLPhotoPicker";
-				IBSC_MODULE = TLPhotoPicker;
-				INFOPLIST_FILE = "Target Support Files/TLPhotoPicker/ResourceBundle-TLPhotoPicker-TLPhotoPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				PRODUCT_NAME = TLPhotoPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A1E940547E72776DF1BA6379FB53D577 /* Debug */ = {
+		94312675D398D25F777D77E1A9056910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A74731F19D5362C6AF06BB992E360BF8 /* Pods-HD Video Player.debug.xcconfig */;
 			buildSettings = {
@@ -789,170 +634,14 @@
 			};
 			name = Debug;
 		};
-		A6D0F60AE6AD4B125E2D2AC4F75EA5CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 201F7EFF60A5373BCA0D6EE0421EB5A4 /* SideMenu.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D18C5AA6A0B2044FED75B459BD7A2B01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TLPhotoPicker/TLPhotoPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLPhotoPicker/TLPhotoPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TLPhotoPicker/TLPhotoPicker.modulemap";
-				PRODUCT_MODULE_NAME = TLPhotoPicker;
-				PRODUCT_NAME = TLPhotoPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EAA2B3D9E6FF177BA2E74AEE2AEA5323 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TLPhotoPicker/TLPhotoPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLPhotoPicker/TLPhotoPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TLPhotoPicker/TLPhotoPicker.modulemap";
-				PRODUCT_MODULE_NAME = TLPhotoPicker;
-				PRODUCT_NAME = TLPhotoPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F2E00CA1BAC5B3A6B90A17FD2CE1A747 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FE5186A0FB3F9E238812CD6524EC8C91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A98839BCCA4766FECD1123DAF52F6F2B /* TLPhotoPicker.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TLPhotoPicker";
-				IBSC_MODULE = TLPhotoPicker;
-				INFOPLIST_FILE = "Target Support Files/TLPhotoPicker/ResourceBundle-TLPhotoPicker-TLPhotoPicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				PRODUCT_NAME = TLPhotoPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		440CDB0C14FC7573850F048F8EC6B131 /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */ = {
+		3512A841917075A9DA6E79D5D270C8BF /* Build configuration list for PBXNativeTarget "VersaPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1E940547E72776DF1BA6379FB53D577 /* Debug */,
-				F2E00CA1BAC5B3A6B90A17FD2CE1A747 /* Release */,
+				30503DC2253A4DF9F08E30F1E29187B8 /* Debug */,
+				482A7F53C7CE68495B1375C11419E563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -966,29 +655,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92707F899E1CD6FD63DCC66A3882B68C /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		6E5720FDF4B003DD7A8F3B31D9D4B69A /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6D0F60AE6AD4B125E2D2AC4F75EA5CC /* Debug */,
-				671D816BCA14C6A40DD63F44285CC804 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B87AC5219C54D541D775B88FD260B96E /* Build configuration list for PBXNativeTarget "TLPhotoPicker-TLPhotoPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE5186A0FB3F9E238812CD6524EC8C91 /* Debug */,
-				8F6EC4D5FC3B170084DA939BDFB35951 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5DB6CE4DB4C739321EDC2B32C5718DA /* Build configuration list for PBXNativeTarget "TLPhotoPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D18C5AA6A0B2044FED75B459BD7A2B01 /* Debug */,
-				EAA2B3D9E6FF177BA2E74AEE2AEA5323 /* Release */,
+				94312675D398D25F777D77E1A9056910 /* Debug */,
+				113819366B1B2E3E2EBBA54AB2908133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

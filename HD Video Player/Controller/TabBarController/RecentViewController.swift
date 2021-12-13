@@ -9,7 +9,7 @@ import UIKit
 
 class RecentViewController: UITableViewController {
 
-    @IBOutlet var collectionView: UITableView!
+    @IBOutlet var recentTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

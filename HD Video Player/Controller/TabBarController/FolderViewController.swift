@@ -6,17 +6,13 @@
 //
 
 import UIKit
-import TLPhotoPicker
-class FolderViewController: UITableViewController, TLPhotosPickerViewControllerDelegate {
+class FolderViewController: UITableViewController {
     
-    @IBOutlet var collcectionView: UITableView!
+    @IBOutlet var folderTableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navControl()
-        let viewController = TLPhotosPickerViewController()
-        viewController.delegate = self
-        self.present(viewController, animated: true, completion: nil)
         let searchButton = UIBarButtonItem(image: UIImage.init(named: "refresh"),  style: .plain, target: self, action: nil)
         let editButton = UIBarButtonItem(image: UIImage.init(named: "search"),  style: .plain, target: self, action: nil)
         let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)
@@ -44,4 +40,15 @@ class FolderViewController: UITableViewController, TLPhotosPickerViewControllerD
        self.navigationItem.titleView = navView
        navView.sizeToFit()
    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FolderViewCell", for: indexPath) as! FolderViewCell
+        cell.backgroundColor = .black
+        return cell
+    }
+    
 }
