@@ -7,19 +7,26 @@
 
 import UIKit
 import Photos
-import AVFoundation
+import AVKit
+import VersaPlayer
 
-
-class VideoViewController: UITableViewController{
-   
-    @IBOutlet var videoTableView: UITableView!
-    var  allUrls = [URL]()
+class VideoViewController: UITableViewController {
     
-        override func viewDidLoad() {
+    @IBOutlet weak var playerView: VersaPlayerView!
+    @IBOutlet weak var controls: VersaPlayerControls!
+    
+    @IBOutlet var videoTableView: UITableView!
+    var allUrls = [URL]()
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         navControl()
         fetchAllVideos()
-       
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+            guard let fileUrl = info[UIImagePickerController.InfoKey.imageURL.rawValue] as? URL else { return }
+            print(fileUrl.lastPathComponent)
+        }
         let searchButton = UIBarButtonItem(image: UIImage.init(named: "refresh"),  style: .plain, target: self, action: nil)
         let editButton = UIBarButtonItem(image: UIImage.init(named: "search"),  style: .plain, target: self, action: nil)
         let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)
@@ -30,12 +37,11 @@ class VideoViewController: UITableViewController{
         let fetchOptions = PHFetchOptions()
         fetchOptions.predicate = NSPredicate(format: "title = %@")
         fetchOptions.predicate = NSPredicate(format: "mediaType = %d ", PHAssetMediaType.video.rawValue )
-
         let allVideo = PHAsset.fetchAssets(with: .video, options: fetchOptions)
         allVideo.enumerateObjects { (asset, index, bool) in
             let imageManager = PHCachingImageManager()
             imageManager.requestAVAsset(forVideo: asset, options: nil, resultHandler: { (asset, audioMix, info) in
-                if asset != nil {
+                if asset != nil{
                     let avasset = asset as! AVURLAsset
                     let urlVideo = avasset.url
                     self.allUrls.append(urlVideo)
@@ -46,7 +52,7 @@ class VideoViewController: UITableViewController{
             self.tableView.reloadData()
         })
     }
-
+    
     func getThumbnailImage(forUrl url: URL) -> UIImage? {
         let asset: AVAsset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
@@ -88,28 +94,16 @@ class VideoViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoViewCell", for: indexPath) as! VideoViewCell
         cell.imgVideo.image = getThumbnailImage(forUrl: allUrls[indexPath.row])
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 1 {
-            
-        }
-    }
-    private func playVideo(from file:String) {
-        let file = file.components(separatedBy: ".")
-
-        guard let path = Bundle.main.path(forResource: file[0], ofType:file[1]) else {
-            debugPrint( "\(file.joined(separator: ".")) not found")
-            return
-        }
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
-
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.view.bounds
-        self.view.layer.addSublayer(playerLayer)
-        player.play()
+        
+        playerView.use(controls: controls)
+        let url = allUrls[indexPath.row]
+        let item = VersaPlayerItem(url: url)
+        playerView.set(item: item)
     }
 }
-

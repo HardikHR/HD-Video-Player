@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     //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
@@ -14,8 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 2.0)
-        // Override point for customization after application launch.
-        return true
+        let audioSession = AVAudioSession.sharedInstance()
+           do {
+               try audioSession.setCategory(.playback, mode: .moviePlayback)
+           }
+           catch {
+               print("Setting category to AVAudioSessionCategoryPlayback failed.")
+           }
+           return true
     }
 
     // MARK: UISceneSession Lifecycle

@@ -3,10 +3,26 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="fIe-Dn-rGO">
+            <objects>
+                <viewController id="Eul-yj-Wm9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2H-8R-C14" customClass="VersaPlayerView" customModule="VersaPlayer">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Psa-MR-b4I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6o8-np-OjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2417" y="951"/>
+        </scene>
         <!--ＶＩＤＥＯ  -->
         <scene sceneID="4Yy-PQ-Bfc">
             <objects>
@@ -26,28 +42,28 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vidioImage" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-ee-egc">
                                             <rect key="frame" x="10" y="5" width="140" height="118"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="118" id="WOd-px-Vzs"/>
-                                                <constraint firstAttribute="width" constant="140" id="aWc-Wt-oTc"/>
+                                                <constraint firstAttribute="width" constant="140" id="HVB-r5-lKi"/>
+                                                <constraint firstAttribute="height" constant="118" id="ehb-Dg-vCP"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="VID-202100178-WA0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-ZF-NSp">
-                                            <rect key="frame" x="159" y="18" width="181.5" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="VID-202100178-WA0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzI-ZF-NSp">
+                                            <rect key="frame" x="160" y="22" width="209" height="20"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10/2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-0n-ey6">
                                             <rect key="frame" x="263" y="41" width="77" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="oAY-oy-ULB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-uB-9nr">
-                                            <rect key="frame" x="389" y="21" width="10" height="22"/>
+                                            <rect key="frame" x="357.5" y="21" width="36.5" height="21.5"/>
                                             <color key="backgroundColor" systemColor="labelColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="10" id="YlU-rt-DCa"/>
-                                            </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" image="more"/>
                                             <connections>
@@ -55,30 +71,29 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10MB" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-xH-cPu">
-                                            <rect key="frame" x="351" y="81" width="43" height="20.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20.5" id="kEM-dI-sSH"/>
-                                            </constraints>
+                                            <rect key="frame" x="349.5" y="77.5" width="43" height="20.5"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="top" secondItem="EzI-ZF-NSp" secondAttribute="bottom" id="0Uz-pf-176"/>
-                                        <constraint firstItem="NmO-uB-9nr" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="21" id="2pC-8P-qTS"/>
-                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="113" id="3mT-jX-7ks"/>
-                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="top" secondItem="EzI-ZF-NSp" secondAttribute="bottom" id="A6l-NR-5KJ"/>
-                                        <constraint firstItem="Cwg-xH-cPu" firstAttribute="top" secondItem="Lzs-0n-ey6" secondAttribute="bottom" constant="22" id="CnB-PO-iDI"/>
-                                        <constraint firstItem="QsW-ee-egc" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="5" id="G0p-bY-PZd"/>
-                                        <constraint firstAttribute="trailing" secondItem="NmO-uB-9nr" secondAttribute="trailing" constant="15" id="KLo-mm-eS7"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Cwg-xH-cPu" secondAttribute="bottom" constant="15.5" id="L4x-yM-1Hc"/>
-                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="topMargin" constant="7" id="Sv3-fY-Oun"/>
-                                        <constraint firstItem="QsW-ee-egc" firstAttribute="leading" secondItem="VRr-Qa-bu5" secondAttribute="leading" constant="10" id="fBu-bh-REP"/>
-                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="9" id="g89-Ad-46w"/>
-                                        <constraint firstItem="Cwg-xH-cPu" firstAttribute="trailing" secondItem="VRr-Qa-bu5" secondAttribute="trailingMargin" id="h0M-7w-5Rj"/>
-                                        <constraint firstAttribute="bottom" secondItem="QsW-ee-egc" secondAttribute="bottom" constant="5" id="ze9-Z6-NrN"/>
+                                        <constraint firstAttribute="bottom" secondItem="QsW-ee-egc" secondAttribute="bottom" constant="5" id="859-IM-2ej"/>
+                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="leading" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="10" id="86c-dr-Jlf"/>
+                                        <constraint firstItem="NmO-uB-9nr" firstAttribute="leading" secondItem="EzI-ZF-NSp" secondAttribute="trailing" constant="16" id="Hs0-82-kNQ"/>
+                                        <constraint firstItem="QsW-ee-egc" firstAttribute="leading" secondItem="VRr-Qa-bu5" secondAttribute="leading" constant="10" id="KtE-5f-KcI"/>
+                                        <constraint firstItem="Cwg-xH-cPu" firstAttribute="top" secondItem="NmO-uB-9nr" secondAttribute="bottom" constant="35" id="Xp0-UG-qZx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Lzs-0n-ey6" secondAttribute="bottom" constant="58" id="Y2B-ge-lOr"/>
+                                        <constraint firstItem="Cwg-xH-cPu" firstAttribute="centerX" secondItem="NmO-uB-9nr" secondAttribute="centerX" constant="-5" id="aGx-FN-7qx"/>
+                                        <constraint firstAttribute="trailing" secondItem="NmO-uB-9nr" secondAttribute="trailing" constant="20" id="bM3-Gs-Cl7"/>
+                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="centerY" secondItem="NmO-uB-9nr" secondAttribute="centerY" id="eUH-WO-A18"/>
+                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="top" secondItem="EzI-ZF-NSp" secondAttribute="bottom" constant="-1" id="efW-Z4-9oD"/>
+                                        <constraint firstItem="QsW-ee-egc" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="5" id="fdk-gr-dul"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lzs-0n-ey6" secondAttribute="trailing" constant="74" id="maD-Gi-DGj"/>
+                                        <constraint firstItem="Lzs-0n-ey6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QsW-ee-egc" secondAttribute="trailing" constant="8" symbolic="YES" id="nQs-ik-Wy5"/>
+                                        <constraint firstItem="EzI-ZF-NSp" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="topMargin" constant="10.5" id="tR2-jM-7fd"/>
+                                        <constraint firstItem="NmO-uB-9nr" firstAttribute="top" secondItem="VRr-Qa-bu5" secondAttribute="top" constant="21" id="yFx-qu-byd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -100,12 +115,203 @@
                         <barButtonItem key="leftBarButtonItem" image="manuIcon" id="Abk-rP-j5x"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="controls" destination="OUA-5m-zag" id="3G7-eg-4k7"/>
                         <outlet property="videoTableView" destination="ltQ-NE-KyH" id="y8v-xX-Luf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QKJ-42-OVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="OUA-5m-zag" customClass="VersaPlayerControls" customModule="VersaPlayer">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="259"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-td-2Yh">
+                            <rect key="frame" x="0.0" y="44" width="379" height="215"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0Z-AT-sMW">
+                                    <rect key="frame" x="0.0" y="0.0" width="379" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTS-Fs-R2u" userLabel="Controls View">
+                                    <rect key="frame" x="0.0" y="75" width="379" height="140"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz8-5h-cnZ" customClass="VersaTimeLabel" customModule="VersaPlayer">
+                                            <rect key="frame" x="163" y="90" width="70" height="30"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-8K-Aln" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="164.5" y="20" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="sxW-c0-6Gj"/>
+                                                <constraint firstAttribute="width" constant="50" id="vTV-9N-l21"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="pause"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="play"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-xv-9Uz" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="286.5" y="20" width="48" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="fastforward"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="fastforward"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <slider opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vha-4G-bPO" customClass="VersaSeekbarSlider" customModule="VersaPlayer">
+                                            <rect key="frame" x="100" y="90" width="53" height="31"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </slider>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-hg-Yqi" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="245" y="90" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="6gQ-Iw-a1b"/>
+                                                <constraint firstAttribute="width" secondItem="OjQ-hg-Yqi" secondAttribute="height" multiplier="1:1" id="7HM-pN-18f"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="pip"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="pip"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-wK-KOj" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="226.5" y="20" width="48" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="skipForward"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="skipForward"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E15-Bs-wyA" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="44.5" y="20" width="48" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="rewind"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="rewind"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-j5-03m">
+                                            <rect key="frame" x="329" y="90" width="30" height="30"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-ac-6lo" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="104.5" y="20" width="48" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="skipBackward"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="skipBackward"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-d1-NSD" customClass="VersaTimeLabel" customModule="VersaPlayer">
+                                            <rect key="frame" x="20" y="90" width="70" height="30"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="ATp-iH-07M"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf4-0n-gJs" customClass="VersaStatefulButton" customModule="VersaPlayer">
+                                            <rect key="frame" x="287" y="90" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Vf4-0n-gJs" secondAttribute="height" multiplier="1:1" id="pPj-kw-bnz"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="fullscreen_disable"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="inactiveImage" value="fullscreen"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Dec-ac-6lo" firstAttribute="top" secondItem="A2b-8K-Aln" secondAttribute="top" id="3IF-p9-BsY"/>
+                                        <constraint firstItem="Vf4-0n-gJs" firstAttribute="top" secondItem="Wz8-5h-cnZ" secondAttribute="top" id="40p-j5-YO0"/>
+                                        <constraint firstItem="A2b-8K-Aln" firstAttribute="centerX" secondItem="tTS-Fs-R2u" secondAttribute="centerX" id="5g4-Zt-Lwn"/>
+                                        <constraint firstItem="Wz8-5h-cnZ" firstAttribute="leading" secondItem="Vha-4G-bPO" secondAttribute="trailing" constant="12" id="6nV-U5-O5L"/>
+                                        <constraint firstItem="fjH-j5-03m" firstAttribute="bottom" secondItem="Vf4-0n-gJs" secondAttribute="bottom" id="7SD-rv-wER"/>
+                                        <constraint firstItem="vaF-xv-9Uz" firstAttribute="top" secondItem="Mbj-wK-KOj" secondAttribute="top" id="7V3-sL-JBB"/>
+                                        <constraint firstItem="Vha-4G-bPO" firstAttribute="bottom" secondItem="8Rm-d1-NSD" secondAttribute="bottom" id="7zd-fr-hFy"/>
+                                        <constraint firstItem="A2b-8K-Aln" firstAttribute="leading" secondItem="Dec-ac-6lo" secondAttribute="trailing" constant="12" id="8Fe-1C-dm2"/>
+                                        <constraint firstItem="8Rm-d1-NSD" firstAttribute="height" secondItem="Vha-4G-bPO" secondAttribute="height" id="8Kp-vS-cb3"/>
+                                        <constraint firstItem="8Rm-d1-NSD" firstAttribute="leading" secondItem="tTS-Fs-R2u" secondAttribute="leading" constant="20" id="8qZ-hE-0DD"/>
+                                        <constraint firstItem="E15-Bs-wyA" firstAttribute="top" secondItem="Dec-ac-6lo" secondAttribute="top" id="BiZ-Pb-cHY"/>
+                                        <constraint firstItem="E15-Bs-wyA" firstAttribute="top" secondItem="tTS-Fs-R2u" secondAttribute="top" constant="20" id="EIA-XB-FUI"/>
+                                        <constraint firstItem="fjH-j5-03m" firstAttribute="top" secondItem="Vf4-0n-gJs" secondAttribute="top" id="Fb8-jQ-Be0"/>
+                                        <constraint firstItem="OjQ-hg-Yqi" firstAttribute="top" secondItem="Vf4-0n-gJs" secondAttribute="top" id="JdC-pM-cb1"/>
+                                        <constraint firstItem="Vf4-0n-gJs" firstAttribute="leading" secondItem="OjQ-hg-Yqi" secondAttribute="trailing" constant="12" id="JdX-wF-6Oe"/>
+                                        <constraint firstItem="OjQ-hg-Yqi" firstAttribute="leading" secondItem="Wz8-5h-cnZ" secondAttribute="trailing" constant="12" id="KMG-59-Nfe"/>
+                                        <constraint firstItem="Dec-ac-6lo" firstAttribute="leading" secondItem="E15-Bs-wyA" secondAttribute="trailing" constant="12" id="ShI-Vk-sIp"/>
+                                        <constraint firstItem="fjH-j5-03m" firstAttribute="width" secondItem="Vf4-0n-gJs" secondAttribute="width" id="TxZ-7q-GwL"/>
+                                        <constraint firstItem="Mbj-wK-KOj" firstAttribute="leading" secondItem="A2b-8K-Aln" secondAttribute="trailing" constant="12" id="UYq-Xe-aRT"/>
+                                        <constraint firstItem="Dec-ac-6lo" firstAttribute="bottom" secondItem="A2b-8K-Aln" secondAttribute="bottom" id="YYl-dM-w9A"/>
+                                        <constraint firstItem="Vha-4G-bPO" firstAttribute="leading" secondItem="8Rm-d1-NSD" secondAttribute="trailing" constant="12" id="YnR-Bp-Sk5"/>
+                                        <constraint firstItem="Wz8-5h-cnZ" firstAttribute="height" secondItem="Vha-4G-bPO" secondAttribute="height" id="YtH-7N-spm"/>
+                                        <constraint firstItem="8Rm-d1-NSD" firstAttribute="baseline" secondItem="Wz8-5h-cnZ" secondAttribute="baseline" id="ZlZ-YP-uK4"/>
+                                        <constraint firstItem="8Rm-d1-NSD" firstAttribute="width" secondItem="Wz8-5h-cnZ" secondAttribute="width" id="aFo-30-kko"/>
+                                        <constraint firstItem="Vf4-0n-gJs" firstAttribute="width" secondItem="OjQ-hg-Yqi" secondAttribute="width" id="cbU-9g-JS4"/>
+                                        <constraint firstItem="OjQ-hg-Yqi" firstAttribute="bottom" secondItem="Vf4-0n-gJs" secondAttribute="bottom" id="dGS-Ep-jzq"/>
+                                        <constraint firstItem="E15-Bs-wyA" firstAttribute="bottom" secondItem="Dec-ac-6lo" secondAttribute="bottom" id="iKi-PZ-yf0"/>
+                                        <constraint firstAttribute="trailing" secondItem="fjH-j5-03m" secondAttribute="trailing" constant="20" id="jp2-mu-v6e"/>
+                                        <constraint firstItem="vaF-xv-9Uz" firstAttribute="leading" secondItem="Mbj-wK-KOj" secondAttribute="trailing" constant="12" id="m5M-1f-zJX"/>
+                                        <constraint firstItem="Mbj-wK-KOj" firstAttribute="top" secondItem="A2b-8K-Aln" secondAttribute="top" id="nFG-Ah-jXO"/>
+                                        <constraint firstItem="Vf4-0n-gJs" firstAttribute="bottom" secondItem="Wz8-5h-cnZ" secondAttribute="bottom" id="poi-9r-uyl"/>
+                                        <constraint firstItem="Mbj-wK-KOj" firstAttribute="bottom" secondItem="A2b-8K-Aln" secondAttribute="bottom" id="und-VI-LAg"/>
+                                        <constraint firstItem="vaF-xv-9Uz" firstAttribute="bottom" secondItem="Mbj-wK-KOj" secondAttribute="bottom" id="v71-v8-krv"/>
+                                        <constraint firstItem="Vha-4G-bPO" firstAttribute="top" secondItem="A2b-8K-Aln" secondAttribute="bottom" constant="20" id="wwi-GA-HbC"/>
+                                        <constraint firstItem="fjH-j5-03m" firstAttribute="leading" secondItem="Vf4-0n-gJs" secondAttribute="trailing" constant="12" id="xvs-tN-uOe"/>
+                                        <constraint firstAttribute="height" constant="140" id="zsE-EB-L7I"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="a0Z-AT-sMW" firstAttribute="trailing" secondItem="tTS-Fs-R2u" secondAttribute="trailing" id="dkC-Bo-8Yz"/>
+                                <constraint firstItem="a0Z-AT-sMW" firstAttribute="trailing" secondItem="dFc-td-2Yh" secondAttribute="trailingMargin" id="trZ-8c-Lzx"/>
+                            </constraints>
+                        </stackView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="v1J-1J-guC">
+                            <rect key="frame" x="171" y="111" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Oda-NA-q02"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dFc-td-2Yh" firstAttribute="trailing" secondItem="Oda-NA-q02" secondAttribute="trailing" id="0tS-Ne-Rkv"/>
+                        <constraint firstItem="dFc-td-2Yh" firstAttribute="bottom" secondItem="Oda-NA-q02" secondAttribute="bottom" id="8EF-Zw-po8"/>
+                        <constraint firstItem="v1J-1J-guC" firstAttribute="centerY" secondItem="OUA-5m-zag" secondAttribute="centerY" id="MFU-Iw-Int"/>
+                        <constraint firstItem="v1J-1J-guC" firstAttribute="centerX" secondItem="OUA-5m-zag" secondAttribute="centerX" id="WGb-R3-guz"/>
+                        <constraint firstItem="v1J-1J-guC" firstAttribute="leading" secondItem="Oda-NA-q02" secondAttribute="leading" constant="171" id="heh-x2-B5U"/>
+                        <constraint firstItem="dFc-td-2Yh" firstAttribute="top" secondItem="Oda-NA-q02" secondAttribute="top" id="zpc-3V-B7m"/>
+                        <constraint firstItem="dFc-td-2Yh" firstAttribute="leading" secondItem="Oda-NA-q02" secondAttribute="leading" id="zt9-bp-pYD"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="airplayContainer" destination="fjH-j5-03m" id="vdd-5L-cBu"/>
+                        <outlet property="bufferingView" destination="v1J-1J-guC" id="osx-fo-OQc"/>
+                        <outlet property="currentTimeLabel" destination="8Rm-d1-NSD" id="trK-Yb-Vt2"/>
+                        <outlet property="forwardButton" destination="vaF-xv-9Uz" id="2oF-XK-nR8"/>
+                        <outlet property="fullscreenButton" destination="Vf4-0n-gJs" id="CcE-ZQ-0X8"/>
+                        <outlet property="pipButton" destination="OjQ-hg-Yqi" id="Z7U-Z0-WyX"/>
+                        <outlet property="playPauseButton" destination="A2b-8K-Aln" id="DO6-gU-Eg1"/>
+                        <outlet property="rewindButton" destination="E15-Bs-wyA" id="2Md-dZ-Jo2"/>
+                        <outlet property="seekbarSlider" destination="Vha-4G-bPO" id="Agu-Zt-L9L"/>
+                        <outlet property="skipBackwardButton" destination="Dec-ac-6lo" id="4Kb-P4-sPd"/>
+                        <outlet property="skipForwardButton" destination="Mbj-wK-KOj" id="xVn-Ku-XpD"/>
+                        <outlet property="totalTimeLabel" destination="Wz8-5h-cnZ" id="xBs-q7-CIW"/>
+                    </connections>
+                </view>
             </objects>
-            <point key="canvasLocation" x="-1575" y="471"/>
+            <point key="canvasLocation" x="-1652.1739130434785" y="939.50892857142856"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="MXr-26-Yml">
@@ -300,14 +506,46 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g6-1L-93T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46.376811594202906" y="448.66071428571428"/>
+            <point key="canvasLocation" x="-43" y="455"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="A2b-8K-Aln">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="Dec-ac-6lo">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="E15-Bs-wyA">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="Mbj-wK-KOj">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="OjQ-hg-Yqi">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="Vf4-0n-gJs">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="vaF-xv-9Uz">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="fastforward" width="48" height="48"/>
         <image name="folder" catalog="system" width="128" height="97"/>
         <image name="folder" width="50" height="38"/>
+        <image name="fullscreen" width="48" height="48"/>
+        <image name="fullscreen_disable" width="48" height="48"/>
         <image name="manuIcon" width="18" height="12"/>
         <image name="more" width="4" height="18"/>
+        <image name="pause" width="48" height="48"/>
+        <image name="pip" width="48" height="48"/>
+        <image name="play" width="48" height="48"/>
+        <image name="rewind" width="48" height="48"/>
+        <image name="skipBackward" width="48" height="48"/>
+        <image name="skipForward" width="48" height="48"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="video" catalog="system" width="128" height="83"/>
         <image name="vidioImage" width="120" height="80"/>
