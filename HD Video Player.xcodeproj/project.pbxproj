@@ -10,6 +10,7 @@
 		2211B9262763556500EE8F3B /* HIdeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */; };
 		223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454AB2762070E0033B24D /* MainTabBarViewController.swift */; };
 		223454C527620BC80033B24D /* MenuItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454C427620BC80033B24D /* MenuItemController.swift */; };
+		224236C52769B38A004650F9 /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224236C42769B38A004650F9 /* VideoPlay.swift */; };
 		2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC46272BD5790067A98D /* VideoViewController.swift */; };
 		2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC49272BD5A00067A98D /* FolderViewController.swift */; };
 		2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC4C272BD5EF0067A98D /* RecentViewController.swift */; };
@@ -30,6 +31,7 @@
 		2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIdeVideoViewController.swift; sourceTree = "<group>"; };
 		223454AB2762070E0033B24D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		223454C427620BC80033B24D /* MenuItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemController.swift; sourceTree = "<group>"; };
+		224236C42769B38A004650F9 /* VideoPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlay.swift; sourceTree = "<group>"; };
 		2249CC46272BD5790067A98D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2249CC49272BD5A00067A98D /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		2249CC4C272BD5EF0067A98D /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
@@ -90,8 +92,9 @@
 		22A41E3A272BF606000B760C /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				2249CC46272BD5790067A98D /* VideoViewController.swift */,
 				223454AB2762070E0033B24D /* MainTabBarViewController.swift */,
+				2249CC46272BD5790067A98D /* VideoViewController.swift */,
+				224236C42769B38A004650F9 /* VideoPlay.swift */,
 				2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */,
 				2249CC49272BD5A00067A98D /* FolderViewController.swift */,
 				2249CC4C272BD5EF0067A98D /* RecentViewController.swift */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */,
+				224236C52769B38A004650F9 /* VideoPlay.swift in Sources */,
 				223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */,
 				22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */,
 				223454C527620BC80033B24D /* MenuItemController.swift in Sources */,

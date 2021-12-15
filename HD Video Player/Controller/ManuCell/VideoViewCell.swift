@@ -11,6 +11,7 @@ class VideoViewCell: UITableViewCell ,UIImagePickerControllerDelegate, UINavigat
     
     @IBOutlet weak var lblVideoSize: UILabel!
     @IBOutlet weak var lblVideoName: UILabel!
+    @IBOutlet weak var lblVideoDuration: UILabel!
     @IBOutlet weak var lblVideoDate: UILabel!
     @IBOutlet weak var btnMore: UIButton!
     @IBOutlet weak var imgVideo: UIImageView!
@@ -21,7 +22,7 @@ class VideoViewCell: UITableViewCell ,UIImagePickerControllerDelegate, UINavigat
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.imgVideo.layer.cornerRadius = 8
+        lblVideoDuration.textColor = .white
     }
 
     

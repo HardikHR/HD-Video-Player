@@ -12,17 +12,17 @@ import VersaPlayer
 
 class VideoViewController: UITableViewController {
     
-    @IBOutlet weak var playerView: VersaPlayerView!
-    @IBOutlet weak var controls: VersaPlayerControls!
-    
     @IBOutlet var videoTableView: UITableView!
     var allUrls = [URL]()
-    
+    var vidoeDate = [AVMetadataItem]()
+    var vidoeduration = [CMTime]()
+    var selectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navControl()
         fetchAllVideos()
-        
+        videoTableView.backgroundColor = .black
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
             guard let fileUrl = info[UIImagePickerController.InfoKey.imageURL.rawValue] as? URL else { return }
             print(fileUrl.lastPathComponent)
@@ -33,18 +33,26 @@ class VideoViewController: UITableViewController {
         navigationItem.rightBarButtonItems = [searchButton, editButton ,morebtn]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     func fetchAllVideos(){
         let fetchOptions = PHFetchOptions()
         fetchOptions.predicate = NSPredicate(format: "title = %@")
         fetchOptions.predicate = NSPredicate(format: "mediaType = %d ", PHAssetMediaType.video.rawValue )
         let allVideo = PHAsset.fetchAssets(with: .video, options: fetchOptions)
+        
         allVideo.enumerateObjects { (asset, index, bool) in
             let imageManager = PHCachingImageManager()
+            print()
             imageManager.requestAVAsset(forVideo: asset, options: nil, resultHandler: { (asset, audioMix, info) in
-                if asset != nil{
+                if asset != nil {
                     let avasset = asset as! AVURLAsset
                     let urlVideo = avasset.url
                     self.allUrls.append(urlVideo)
+                    self.vidoeDate.append((asset?.creationDate)!)
+                    self.vidoeduration.append(asset!.duration)
                 }
             })
         }
@@ -91,19 +99,35 @@ class VideoViewController: UITableViewController {
         return allUrls.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoViewCell", for: indexPath) as! VideoViewCell
         cell.imgVideo.image = getThumbnailImage(forUrl: allUrls[indexPath.row])
+        cell.lblVideoDate.text = vidoeDate[indexPath.row].dateValue?.debugDescription
+        cell.lblVideoDuration.text = self.geTimefromSecond(second: Int(vidoeduration[indexPath.row].seconds))
+        cell.lblVideoName.text = allUrls[indexPath.row].lastPathComponent
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        playerView.use(controls: controls)
-        let url = allUrls[indexPath.row]
-        let item = VersaPlayerItem(url: url)
-        playerView.set(item: item)
+        selectedIndex = indexPath.row
+        self.performSegue(withIdentifier: "seguaVideo", sender: self)
+    }
+    
+    func geTimefromSecond(second:Int) -> String{
+        let (h,m,s) = (second / 3600, (second % 3600) / 60, (second % 3600) % 60)
+        let h_string = h < 10 ? "0\(h)" : "\(h)"
+        let m_string =  m < 10 ? "0\(m)" : "\(m)"
+        let s_string =  s < 10 ? "0\(s)" : "\(s)"
+        return "\(h_string):\(m_string):\(s_string)"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seguaVideo"{
+            let vc = segue.destination as! VideoPlay
+            vc.url = allUrls[selectedIndex]
+        }
     }
 }
