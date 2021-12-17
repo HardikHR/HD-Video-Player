@@ -19,6 +19,15 @@ class RecentViewController: UITableViewController {
         let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)
         navigationItem.rightBarButtonItems = [searchButton, editButton ,morebtn]
     }
+    
+    @IBAction func MoreItem(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func refreshbtn(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func Searchbtn(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func sideMenu(_ sender: UIBarButtonItem) {
+    }
     func navControl() {
        if self.navigationController == nil {
            return

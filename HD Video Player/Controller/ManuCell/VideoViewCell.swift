@@ -25,7 +25,6 @@ class VideoViewCell: UITableViewCell ,UIImagePickerControllerDelegate, UINavigat
         lblVideoDuration.textColor = .white
     }
 
-    
     @IBAction func btnMoreOption(_ sender: UIButton) {
         let Rename = UIAction(title: "Rename") { _ in
             print("Rename")}

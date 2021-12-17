@@ -1,16 +1,20 @@
 PODS:
+  - SwiftyContextMenu (0.1.5)
   - VersaPlayer (3.0.2)
 
 DEPENDENCIES:
+  - SwiftyContextMenu
   - VersaPlayer
 
 SPEC REPOS:
   trunk:
+    - SwiftyContextMenu
     - VersaPlayer
 
 SPEC CHECKSUMS:
+  SwiftyContextMenu: 3cd07fded2bea2e73a98a5b734375dce278d4399
   VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
 
-PODFILE CHECKSUM: a264e1b75555f39b5e43a0ee0499be317eb0cc3a
+PODFILE CHECKSUM: 4eeeab0ba73c31087cbacccb186f705e479ef47e
 
 COCOAPODS: 1.8.4

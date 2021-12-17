@@ -18,7 +18,15 @@ class FolderViewController: UITableViewController {
         let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)
         navigationItem.rightBarButtonItems = [searchButton, editButton ,morebtn]
     }
+    @IBAction func SideMenu(_ sender: Any) {
+    }
     
+    @IBAction func MoreItem(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func refreshbtn(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func Searchbtn(_ sender: UIBarButtonItem) {
+    }
     func navControl() {
        if self.navigationController == nil {
            return

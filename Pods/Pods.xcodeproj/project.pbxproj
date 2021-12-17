@@ -7,34 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0673EB55F380658627A9E91E66A97EAC /* VersaTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */; };
-		37AB7673B2F8A11E1F0A2A54B909FE14 /* VersaPlayerControlsBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */; };
-		44BF7F038424284C4CE61B4DEA445520 /* VersaPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */; };
-		5DE87FD811E42DA365121DDF74554236 /* VersaPlayerControlsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */; };
-		61287756EFBA2996D3260030B1BAF688 /* VersaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */; };
-		643129E5EE0A36A11A0E3F910E7380B9 /* VersaPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */; };
-		6D5E68B1D3F98AC02B29048E9C2F0A4B /* VersaPlayerGestureRecieverViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */; };
-		77329E061470AB69BDC53EB84325E023 /* Pods-HD Video Player-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7772293C6E437E5FE57F4BB6C3E8E94B /* VersaSeekbarSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */; };
-		7A68231138CC6232F0E09F4EC224E441 /* VersaPlayerPlaybackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */; };
-		7AEA1FF7F4FEA1642E92E4DF99505FAE /* VersaPlayerPlaybackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */; };
-		89D39450A27C0FE7899B8CEC12CCB3C5 /* VersaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */; };
-		8D0E2122D9A9226EB01FBDE7C8BF513D /* VersaPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		904185BE0457AAC8CCE864D37560D94E /* VersaPlayerMediaTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */; };
-		963B24C5EE6EFE98575855B8447B1B98 /* VersaPlayerCaptionStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */; };
-		9C1F5B7FD4BE5DCF9512B2DD2194C548 /* Pods-HD Video Player-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */; };
+		0673EB55F380658627A9E91E66A97EAC /* VersaTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43857D32FD3B0198A558EB669CCCBC /* VersaTimeLabel.swift */; };
+		0CCF9A5D2F5C170C13D1B5DFFAC5E5C3 /* ContextMenuBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F568394DFECC979BB5C3E4338349B9F8 /* ContextMenuBlurView.swift */; };
+		37519503A93127A7E8A0BFC01318AD0C /* UIView+ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE6891ACA5C4D9AF6936776C1B0184 /* UIView+ContextMenu.swift */; };
+		37AB7673B2F8A11E1F0A2A54B909FE14 /* VersaPlayerControlsBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A1E1F8803D901EDA15E13387A1051 /* VersaPlayerControlsBehaviour.swift */; };
+		419966991063050CEB78B6F37E24DEF3 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8AE9458DE7123146743A7658BAE8FC /* UIViewController+.swift */; };
+		420BA0F68782065B3A79231C5F3BED8E /* ContextMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388BD8542E334538AD02B47BE31000F /* ContextMenuViewController.swift */; };
+		44BF7F038424284C4CE61B4DEA445520 /* VersaPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B120C540E446FF910A1B424CA48D663 /* VersaPlayerItem.swift */; };
+		48E16EEAD5B07CE5740D6573BF29A3D7 /* ContextMenuContentBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B6CF83303105B4825B314FF74E428 /* ContextMenuContentBlurView.swift */; };
+		493DBE7D4A623E3598E402A34FE78F2D /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB977410E3EEE6C2C454EA11C2840996 /* ContextMenu.swift */; };
+		57BD86925A8D7364E47FCAFFCE83A0D4 /* ContextMenuBackgroundBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA96EEDB8A6A3CD103D9802FA08D793 /* ContextMenuBackgroundBlurView.swift */; };
+		5DE87FD811E42DA365121DDF74554236 /* VersaPlayerControlsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63E2E682D58C3ED673E0D79B3AB8B /* VersaPlayerControlsCoordinator.swift */; };
+		61287756EFBA2996D3260030B1BAF688 /* VersaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3A9160003AD3D8711D1DD25BC0E9A /* VersaPlayerView.swift */; };
+		643129E5EE0A36A11A0E3F910E7380B9 /* VersaPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4987C0FD64E80E7329364367C060B /* VersaPlayerExtension.swift */; };
+		693D441EE984C76A27B05066A86AA92D /* ContextMenuWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D47D734FB18F528EA7FD4571058E0 /* ContextMenuWindow.swift */; };
+		6CFFA9D3DC7B827D9576B8BDB6A7A186 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB982BCDA271BE7373437CF1D1FFDA1 /* UIView+.swift */; };
+		6D5E68B1D3F98AC02B29048E9C2F0A4B /* VersaPlayerGestureRecieverViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FB28358DDF5016D786E037A82089DF /* VersaPlayerGestureRecieverViewDelegate.swift */; };
+		70632A5EA2DA51AC85AF5C7C5B893C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		73523F8E140CD1ACB3211C96123CCD0F /* ContextMenuSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BF2A8C3BC43556007CD67FE3744FB /* ContextMenuSeparatorView.swift */; };
+		762516BE81074DB321D9F6386DEAF7AC /* ContextMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCA864594AF4B1F1D8C30935B4688F /* ContextMenuTableView.swift */; };
+		776624FAF72AF720594F5D694D64A12A /* ContextMenuTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2BB8F68619B959C1B5D5F618BBE3C3 /* ContextMenuTitleLabel.swift */; };
+		7772293C6E437E5FE57F4BB6C3E8E94B /* VersaSeekbarSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846551D1BCAFA990897CA669FC52B94F /* VersaSeekbarSlider.swift */; };
+		7A68231138CC6232F0E09F4EC224E441 /* VersaPlayerPlaybackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB3881110A596979A8E8DCA9F96249 /* VersaPlayerPlaybackError.swift */; };
+		7AEA1FF7F4FEA1642E92E4DF99505FAE /* VersaPlayerPlaybackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDDD19F6FDC1358171606FE36E58C8 /* VersaPlayerPlaybackDelegate.swift */; };
+		89D39450A27C0FE7899B8CEC12CCB3C5 /* VersaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB215B4C676119B7AA84F91E47EEC02 /* VersaPlayer.swift */; };
+		8D0E2122D9A9226EB01FBDE7C8BF513D /* VersaPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 243407B29ED4AD6728330F35D901E769 /* VersaPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904185BE0457AAC8CCE864D37560D94E /* VersaPlayerMediaTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844A2FAC0CC13F7C703D8130DC34A09 /* VersaPlayerMediaTrack.swift */; };
+		907C89DA6D96723AE428FF5ED76DBEA2 /* Pods-HD Video Player-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		963B24C5EE6EFE98575855B8447B1B98 /* VersaPlayerCaptionStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F276B1AF50AE6C62DF42FFF52F4B99D0 /* VersaPlayerCaptionStyling.swift */; };
+		99B1424BFA252AC77F41B015A2472BF7 /* Pods-HD Video Player-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */; };
+		9A536266ECD8C067ED64BA93F1074F00 /* SwiftyContextMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A6E9122155801197DCAFFE3E231386 /* SwiftyContextMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC276F9677786656382E0859DCC778B /* SwiftyContextMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FF43D6E0FAE48FDE6E635CC74D70 /* SwiftyContextMenu-dummy.m */; };
 		A0B88998ABF08EACF3E13197775EAC11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B7373E6AD247D12FAEBFE7FF17903998 /* VersaPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */; };
-		C11451B3D376298E7566539C19666E07 /* VersaPlayerGestureRecieverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */; };
-		C2E50DD66816FF48681AA4EB82F00DA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DB82B3426A8520371E57B957E113474E /* VersaPlayerDecryptionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */; };
-		E1C734D6207B3AE97DA623C1B2B1FDEE /* VersaStatefulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */; };
-		E59D916E82BD55AFD91A7AB704A3EE45 /* VersaPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */; };
-		FF520F6A7D92410E58C90555D1D20C13 /* VersaPlayerRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */; };
+		A8D93D903377439B1790827FEEDB99BC /* IntensityVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6F32F81DFC131981E5EE93BE8EFB9 /* IntensityVisualEffectView.swift */; };
+		AF4B618A3CCC3E6C68796B8BAF5D0FA9 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324CB361D82CE79452C506F29212BC8 /* UIStackView+.swift */; };
+		B7373E6AD247D12FAEBFE7FF17903998 /* VersaPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F2166F99F69B47EFB28F1D59499E70 /* VersaPlayer-dummy.m */; };
+		C11451B3D376298E7566539C19666E07 /* VersaPlayerGestureRecieverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FDDF0ADB19FE430DD00D2B70B211B /* VersaPlayerGestureRecieverView.swift */; };
+		C2485B34FA058F4E55095FDD1AE6C83E /* ContextMenuActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6178880EC1A7F761092A1845787B7 /* ContextMenuActionTableViewCell.swift */; };
+		D1F694D827BFA1C8BF98DB3CE0F014D6 /* ContextMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD24F39EBA7CE9BC3BE08FA9176732E /* ContextMenuDelegate.swift */; };
+		D86E701DF4BF4C19C2557EEE443B169E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DB82B3426A8520371E57B957E113474E /* VersaPlayerDecryptionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EDF8C575D2C7E68095BC928E6CBD10 /* VersaPlayerDecryptionDelegate.swift */; };
+		DCF569E48195A676CA1F52627A3281B5 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225F4C3AE175BB3B3FCEC7AF9627779 /* UIColor+.swift */; };
+		E1C734D6207B3AE97DA623C1B2B1FDEE /* VersaStatefulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67082DD175488C7E08A8101B81BFE78F /* VersaStatefulButton.swift */; };
+		E49D768B672D3C93EF899A9FB0A63C48 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013278AD4D6CE8491FC9FAACFCA917C9 /* SeparatorView.swift */; };
+		E59D916E82BD55AFD91A7AB704A3EE45 /* VersaPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86ADE41855F62D520AE8FA07341538A /* VersaPlayerControls.swift */; };
+		FF520F6A7D92410E58C90555D1D20C13 /* VersaPlayerRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A130B61AB8960A1CF2B8D42B7A5C50E /* VersaPlayerRenderingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8E0B4FAAA670EE27C40EAD7505DCEE9E /* PBXContainerItemProxy */ = {
+		3697EFF00B03357B85C32D818525AA81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3AAC6D3E26D0AEC21B5F7687EDE11CF;
+			remoteInfo = SwiftyContextMenu;
+		};
+		3A2EE17F87D2EA7199F3B590D1B24DD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,43 +72,68 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007A1E1F8803D901EDA15E13387A1051 /* VersaPlayerControlsBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsBehaviour.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerControlsBehaviour.swift; sourceTree = "<group>"; };
+		013278AD4D6CE8491FC9FAACFCA917C9 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = SwiftyContextMenu/Views/SeparatorView.swift; sourceTree = "<group>"; };
 		04053D13B37BBDFB43B2B706E06533D8 /* Pods-HD Video Player.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HD Video Player.modulemap"; sourceTree = "<group>"; };
 		06CBAEDEA38DD607393D53B57BAF8691 /* Pods-HD Video Player-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HD Video Player-Info.plist"; sourceTree = "<group>"; };
-		0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerMediaTrack.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerMediaTrack.swift; sourceTree = "<group>"; };
+		0CEE6891ACA5C4D9AF6936776C1B0184 /* UIView+ContextMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+ContextMenu.swift"; path = "SwiftyContextMenu/Extensions/UIView+ContextMenu.swift"; sourceTree = "<group>"; };
+		1225F4C3AE175BB3B3FCEC7AF9627779 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+.swift"; path = "SwiftyContextMenu/Extensions/UIColor+.swift"; sourceTree = "<group>"; };
+		13FCA864594AF4B1F1D8C30935B4688F /* ContextMenuTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuTableView.swift; path = SwiftyContextMenu/ContextMenuTableView.swift; sourceTree = "<group>"; };
 		155B8ABF7AC18655E68D26AB82FDEADC /* Pods-HD Video Player-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HD Video Player-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VersaPlayer.xcconfig; sourceTree = "<group>"; };
-		322741594A02B331256C76702857957D /* VersaPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VersaPlayer-Info.plist"; sourceTree = "<group>"; };
-		3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerExtension.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerExtension.swift; sourceTree = "<group>"; };
-		3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackError.swift; path = VersaPlayer/Classes/Source/Core/Enums/VersaPlayerPlaybackError.swift; sourceTree = "<group>"; };
-		3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerView.swift; path = VersaPlayer/Classes/Source/VersaPlayerView.swift; sourceTree = "<group>"; };
-		3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsCoordinator.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControlsCoordinator.swift; sourceTree = "<group>"; };
-		44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerPlaybackDelegate.swift; sourceTree = "<group>"; };
-		49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaSeekbarSlider.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaSeekbarSlider.swift; sourceTree = "<group>"; };
+		18A63E2E682D58C3ED673E0D79B3AB8B /* VersaPlayerControlsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsCoordinator.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControlsCoordinator.swift; sourceTree = "<group>"; };
+		1C8AE9458DE7123146743A7658BAE8FC /* UIViewController+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "SwiftyContextMenu/Extensions/UIViewController+.swift"; sourceTree = "<group>"; };
+		2324CB361D82CE79452C506F29212BC8 /* UIStackView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+.swift"; path = "SwiftyContextMenu/Extensions/UIStackView+.swift"; sourceTree = "<group>"; };
+		243407B29ED4AD6728330F35D901E769 /* VersaPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-umbrella.h"; sourceTree = "<group>"; };
+		2B81FF43D6E0FAE48FDE6E635CC74D70 /* SwiftyContextMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyContextMenu-dummy.m"; sourceTree = "<group>"; };
+		2DDB3881110A596979A8E8DCA9F96249 /* VersaPlayerPlaybackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackError.swift; path = VersaPlayer/Classes/Source/Core/Enums/VersaPlayerPlaybackError.swift; sourceTree = "<group>"; };
+		2FA96EEDB8A6A3CD103D9802FA08D793 /* ContextMenuBackgroundBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuBackgroundBlurView.swift; path = SwiftyContextMenu/ContextMenuBackgroundBlurView.swift; sourceTree = "<group>"; };
+		43835F59CB9A4F0E25A8637915A3A7E4 /* VersaPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VersaPlayer.modulemap; sourceTree = "<group>"; };
+		46DB34E2DA379F15990C2CF9FFDD98A8 /* VersaPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-prefix.pch"; sourceTree = "<group>"; };
+		48BDDD19F6FDC1358171606FE36E58C8 /* VersaPlayerPlaybackDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerPlaybackDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerPlaybackDelegate.swift; sourceTree = "<group>"; };
+		48E3A9160003AD3D8711D1DD25BC0E9A /* VersaPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerView.swift; path = VersaPlayer/Classes/Source/VersaPlayerView.swift; sourceTree = "<group>"; };
+		4A130B61AB8960A1CF2B8D42B7A5C50E /* VersaPlayerRenderingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerRenderingView.swift; path = VersaPlayer/Classes/Source/Core/Rendering/VersaPlayerRenderingView.swift; sourceTree = "<group>"; };
 		4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HD Video Player.release.xcconfig"; sourceTree = "<group>"; };
 		5BD75C8BCB91C022DC8834F13F779983 /* Pods-HD Video Player-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HD Video Player-dummy.m"; sourceTree = "<group>"; };
-		5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerRenderingView.swift; path = VersaPlayer/Classes/Source/Core/Rendering/VersaPlayerRenderingView.swift; sourceTree = "<group>"; };
 		62A7D26F837A100891066AC1DB0F0BC2 /* Pods-HD Video Player-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HD Video Player-umbrella.h"; sourceTree = "<group>"; };
-		67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67082DD175488C7E08A8101B81BFE78F /* VersaStatefulButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaStatefulButton.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaStatefulButton.swift; sourceTree = "<group>"; };
+		67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VersaPlayer.framework; path = VersaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A6F32F81DFC131981E5EE93BE8EFB9 /* IntensityVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntensityVisualEffectView.swift; path = SwiftyContextMenu/Views/IntensityVisualEffectView.swift; sourceTree = "<group>"; };
+		6BB982BCDA271BE7373437CF1D1FFDA1 /* UIView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "SwiftyContextMenu/Extensions/UIView+.swift"; sourceTree = "<group>"; };
+		72E7393752D60E181FC2B1247FCA513C /* SwiftyContextMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyContextMenu-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverViewDelegate.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverViewDelegate.swift; sourceTree = "<group>"; };
-		7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerItem.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerItem.swift; sourceTree = "<group>"; };
-		862FB77C801C2AAB3651B42BBDDD2B8A /* VersaPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VersaPlayer.modulemap; sourceTree = "<group>"; };
-		88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayer.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayer.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VersaPlayer-dummy.m"; sourceTree = "<group>"; };
+		74EDF8C575D2C7E68095BC928E6CBD10 /* VersaPlayerDecryptionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerDecryptionDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerDecryptionDelegate.swift; sourceTree = "<group>"; };
+		7844A2FAC0CC13F7C703D8130DC34A09 /* VersaPlayerMediaTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerMediaTrack.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerMediaTrack.swift; sourceTree = "<group>"; };
+		7B120C540E446FF910A1B424CA48D663 /* VersaPlayerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerItem.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerItem.swift; sourceTree = "<group>"; };
+		7B43857D32FD3B0198A558EB669CCCBC /* VersaTimeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaTimeLabel.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaTimeLabel.swift; sourceTree = "<group>"; };
+		7BB71553D1D2016F5CD60B9F86548EF8 /* VersaPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VersaPlayer.xcconfig; sourceTree = "<group>"; };
+		7E2BB8F68619B959C1B5D5F618BBE3C3 /* ContextMenuTitleLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuTitleLabel.swift; path = SwiftyContextMenu/ContextMenuTitleLabel.swift; sourceTree = "<group>"; };
+		82FB28358DDF5016D786E037A82089DF /* VersaPlayerGestureRecieverViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverViewDelegate.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverViewDelegate.swift; sourceTree = "<group>"; };
+		846551D1BCAFA990897CA669FC52B94F /* VersaSeekbarSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaSeekbarSlider.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaSeekbarSlider.swift; sourceTree = "<group>"; };
+		88C9051D2DA25381280081FABDB4BDB4 /* SwiftyContextMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyContextMenu.modulemap; sourceTree = "<group>"; };
+		8B088EA43FCFE9617E041A6AD343CD78 /* SwiftyContextMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyContextMenu.xcconfig; sourceTree = "<group>"; };
+		8E7BF2A8C3BC43556007CD67FE3744FB /* ContextMenuSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuSeparatorView.swift; path = SwiftyContextMenu/ContextMenuSeparatorView.swift; sourceTree = "<group>"; };
+		90E4987C0FD64E80E7329364367C060B /* VersaPlayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerExtension.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerExtension.swift; sourceTree = "<group>"; };
+		971C829110A29E393839557831F31D90 /* SwiftyContextMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyContextMenu.framework; path = SwiftyContextMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A57FDDF0ADB19FE430DD00D2B70B211B /* VersaPlayerGestureRecieverView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverView.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverView.swift; sourceTree = "<group>"; };
 		A74731F19D5362C6AF06BB992E360BF8 /* Pods-HD Video Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HD Video Player.debug.xcconfig"; sourceTree = "<group>"; };
-		AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-umbrella.h"; sourceTree = "<group>"; };
-		BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerDecryptionDelegate.swift; path = VersaPlayer/Classes/Source/Core/Protocols/VersaPlayerDecryptionDelegate.swift; sourceTree = "<group>"; };
-		BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControls.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControls.swift; sourceTree = "<group>"; };
+		BBD24F39EBA7CE9BC3BE08FA9176732E /* ContextMenuDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuDelegate.swift; path = SwiftyContextMenu/ContextMenuDelegate.swift; sourceTree = "<group>"; };
+		C2D6178880EC1A7F761092A1845787B7 /* ContextMenuActionTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuActionTableViewCell.swift; path = SwiftyContextMenu/ContextMenuActionTableViewCell.swift; sourceTree = "<group>"; };
 		C39F89EB0CD77253E0A68D0CFE2F3E71 /* Pods-HD Video Player-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HD Video Player-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaTimeLabel.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaTimeLabel.swift; sourceTree = "<group>"; };
-		D4DFB2818B93811985FBCE73E5A5D93E /* VersaPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VersaPlayer-prefix.pch"; sourceTree = "<group>"; };
-		E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HD_Video_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerCaptionStyling.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerCaptionStyling.swift; sourceTree = "<group>"; };
-		E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaStatefulButton.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Controls/VersaStatefulButton.swift; sourceTree = "<group>"; };
-		F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControlsBehaviour.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerControlsBehaviour.swift; sourceTree = "<group>"; };
-		F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerGestureRecieverView.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/Core/VersaPlayerGestureRecieverView.swift; sourceTree = "<group>"; };
+		C41B6CF83303105B4825B314FF74E428 /* ContextMenuContentBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuContentBlurView.swift; path = SwiftyContextMenu/ContextMenuContentBlurView.swift; sourceTree = "<group>"; };
+		C86ADE41855F62D520AE8FA07341538A /* VersaPlayerControls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerControls.swift; path = VersaPlayer/Classes/Source/VersaPlayerControls/VersaPlayerControls.swift; sourceTree = "<group>"; };
+		C8F2166F99F69B47EFB28F1D59499E70 /* VersaPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VersaPlayer-dummy.m"; sourceTree = "<group>"; };
+		D60BF886F3C5E37112CEFF01DC107212 /* VersaPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VersaPlayer-Info.plist"; sourceTree = "<group>"; };
+		D6A6E9122155801197DCAFFE3E231386 /* SwiftyContextMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyContextMenu-umbrella.h"; sourceTree = "<group>"; };
+		DB343514F8C5D36F0A7016D6F2AF3431 /* SwiftyContextMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyContextMenu-Info.plist"; sourceTree = "<group>"; };
+		E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HD_Video_Player.framework; path = "Pods-HD Video Player.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E388BD8542E334538AD02B47BE31000F /* ContextMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuViewController.swift; path = SwiftyContextMenu/ContextMenuViewController.swift; sourceTree = "<group>"; };
+		F276B1AF50AE6C62DF42FFF52F4B99D0 /* VersaPlayerCaptionStyling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayerCaptionStyling.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayerCaptionStyling.swift; sourceTree = "<group>"; };
+		F568394DFECC979BB5C3E4338349B9F8 /* ContextMenuBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuBlurView.swift; path = SwiftyContextMenu/ContextMenuBlurView.swift; sourceTree = "<group>"; };
+		F97D47D734FB18F528EA7FD4571058E0 /* ContextMenuWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenuWindow.swift; path = SwiftyContextMenu/ContextMenuWindow.swift; sourceTree = "<group>"; };
 		FAA3195CB19D253009FDD2573860F722 /* Pods-HD Video Player-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HD Video Player-frameworks.sh"; sourceTree = "<group>"; };
+		FB977410E3EEE6C2C454EA11C2840996 /* ContextMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMenu.swift; path = SwiftyContextMenu/ContextMenu.swift; sourceTree = "<group>"; };
+		FBB215B4C676119B7AA84F91E47EEC02 /* VersaPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersaPlayer.swift; path = VersaPlayer/Classes/Source/Core/Player/VersaPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,23 +145,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A2CC64D5E9056D7E0B622026E6D923F /* Frameworks */ = {
+		34AF8B9D3D76C1C953A3919BBCB1B252 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E50DD66816FF48681AA4EB82F00DA5 /* Foundation.framework in Frameworks */,
+				D86E701DF4BF4C19C2557EEE443B169E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B05120B45C2AE91DB77735A43A8333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70632A5EA2DA51AC85AF5C7C5B893C59 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51471114C5CE0EDD64529C212D3FF37F /* Pods */ = {
+		0DA4CFC99FDA0CDDBCB45F9222D982D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B2C0CB59F77445F017F7C6E9A7D2E49 /* VersaPlayer */,
+				43835F59CB9A4F0E25A8637915A3A7E4 /* VersaPlayer.modulemap */,
+				7BB71553D1D2016F5CD60B9F86548EF8 /* VersaPlayer.xcconfig */,
+				C8F2166F99F69B47EFB28F1D59499E70 /* VersaPlayer-dummy.m */,
+				D60BF886F3C5E37112CEFF01DC107212 /* VersaPlayer-Info.plist */,
+				46DB34E2DA379F15990C2CF9FFDD98A8 /* VersaPlayer-prefix.pch */,
+				243407B29ED4AD6728330F35D901E769 /* VersaPlayer-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/VersaPlayer";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -127,44 +194,55 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7B2C0CB59F77445F017F7C6E9A7D2E49 /* VersaPlayer */ = {
+		644BA0BE50AA0D2A4039DB306D3C067F /* VersaPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				88FF9020072D46B4ACB231222A870B0D /* VersaPlayer.swift */,
-				E3F938700EF3B9FD49301C422B052B6B /* VersaPlayerCaptionStyling.swift */,
-				BB956DC4C282BEFAE39ECDE5A2493C26 /* VersaPlayerControls.swift */,
-				F1C8E5993E1E76207725C6D07AB42582 /* VersaPlayerControlsBehaviour.swift */,
-				3F365D6C98F7D432DF930DF7C3745CBF /* VersaPlayerControlsCoordinator.swift */,
-				BB646C36B19C73B48F0FB4C41DF63DDB /* VersaPlayerDecryptionDelegate.swift */,
-				3634EF1F5BD1CD9916346277BB224527 /* VersaPlayerExtension.swift */,
-				F1E440CBA0C583CAB782070CC76811EE /* VersaPlayerGestureRecieverView.swift */,
-				7682BAE1401541131E71E1FB35DCB850 /* VersaPlayerGestureRecieverViewDelegate.swift */,
-				7E099D6184753C90308CAF272E0D9863 /* VersaPlayerItem.swift */,
-				0834803B419B0D3889E648CBE6B21D06 /* VersaPlayerMediaTrack.swift */,
-				44AE7EA825359D672A04D7981908F7A6 /* VersaPlayerPlaybackDelegate.swift */,
-				3925AC3E78DFAE62A0EB2F08D5727097 /* VersaPlayerPlaybackError.swift */,
-				5E6A14480FAF5CDB352E112BAF1161E7 /* VersaPlayerRenderingView.swift */,
-				3DA1594DA5DDE7DB36A809A3FF337CFA /* VersaPlayerView.swift */,
-				49023928C5BD09FCDCAC2EE542875551 /* VersaSeekbarSlider.swift */,
-				E8D57790E3E55148DB846FF1AB43542F /* VersaStatefulButton.swift */,
-				C5253E3C64EF760451235F182826FE7E /* VersaTimeLabel.swift */,
-				CBFEB72080574B78F038EFE960254896 /* Support Files */,
+				FBB215B4C676119B7AA84F91E47EEC02 /* VersaPlayer.swift */,
+				F276B1AF50AE6C62DF42FFF52F4B99D0 /* VersaPlayerCaptionStyling.swift */,
+				C86ADE41855F62D520AE8FA07341538A /* VersaPlayerControls.swift */,
+				007A1E1F8803D901EDA15E13387A1051 /* VersaPlayerControlsBehaviour.swift */,
+				18A63E2E682D58C3ED673E0D79B3AB8B /* VersaPlayerControlsCoordinator.swift */,
+				74EDF8C575D2C7E68095BC928E6CBD10 /* VersaPlayerDecryptionDelegate.swift */,
+				90E4987C0FD64E80E7329364367C060B /* VersaPlayerExtension.swift */,
+				A57FDDF0ADB19FE430DD00D2B70B211B /* VersaPlayerGestureRecieverView.swift */,
+				82FB28358DDF5016D786E037A82089DF /* VersaPlayerGestureRecieverViewDelegate.swift */,
+				7B120C540E446FF910A1B424CA48D663 /* VersaPlayerItem.swift */,
+				7844A2FAC0CC13F7C703D8130DC34A09 /* VersaPlayerMediaTrack.swift */,
+				48BDDD19F6FDC1358171606FE36E58C8 /* VersaPlayerPlaybackDelegate.swift */,
+				2DDB3881110A596979A8E8DCA9F96249 /* VersaPlayerPlaybackError.swift */,
+				4A130B61AB8960A1CF2B8D42B7A5C50E /* VersaPlayerRenderingView.swift */,
+				48E3A9160003AD3D8711D1DD25BC0E9A /* VersaPlayerView.swift */,
+				846551D1BCAFA990897CA669FC52B94F /* VersaSeekbarSlider.swift */,
+				67082DD175488C7E08A8101B81BFE78F /* VersaStatefulButton.swift */,
+				7B43857D32FD3B0198A558EB669CCCBC /* VersaTimeLabel.swift */,
+				0DA4CFC99FDA0CDDBCB45F9222D982D5 /* Support Files */,
 			);
+			name = VersaPlayer;
 			path = VersaPlayer;
 			sourceTree = "<group>";
 		};
-		CBFEB72080574B78F038EFE960254896 /* Support Files */ = {
+		86A1523C74900B5737A3F92DC758A049 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				862FB77C801C2AAB3651B42BBDDD2B8A /* VersaPlayer.modulemap */,
-				2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */,
-				A5E722E88C078ECFD484EA0D0D5DB53E /* VersaPlayer-dummy.m */,
-				322741594A02B331256C76702857957D /* VersaPlayer-Info.plist */,
-				D4DFB2818B93811985FBCE73E5A5D93E /* VersaPlayer-prefix.pch */,
-				AF923F37DE831D4BA72BFE34EA673C30 /* VersaPlayer-umbrella.h */,
+				E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */,
+				971C829110A29E393839557831F31D90 /* SwiftyContextMenu.framework */,
+				67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A772EA3394441BDB604578E09DFE1B7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88C9051D2DA25381280081FABDB4BDB4 /* SwiftyContextMenu.modulemap */,
+				8B088EA43FCFE9617E041A6AD343CD78 /* SwiftyContextMenu.xcconfig */,
+				2B81FF43D6E0FAE48FDE6E635CC74D70 /* SwiftyContextMenu-dummy.m */,
+				DB343514F8C5D36F0A7016D6F2AF3431 /* SwiftyContextMenu-Info.plist */,
+				72E7393752D60E181FC2B1247FCA513C /* SwiftyContextMenu-prefix.pch */,
+				D6A6E9122155801197DCAFFE3E231386 /* SwiftyContextMenu-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/VersaPlayer";
+			path = "../Target Support Files/SwiftyContextMenu";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -172,8 +250,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				51471114C5CE0EDD64529C212D3FF37F /* Pods */,
-				DD1F1BA599CB2C36BF863628FFB36110 /* Products */,
+				D2EAB0ABE6428B3DD9F5E77ADC76F01D /* Pods */,
+				86A1523C74900B5737A3F92DC758A049 /* Products */,
 				617B1CDB3B942B2E0E3F3D2343C8CD5E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -186,13 +264,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD1F1BA599CB2C36BF863628FFB36110 /* Products */ = {
+		D2EAB0ABE6428B3DD9F5E77ADC76F01D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1E01123E64CE451DBD7D3028A7EFBED /* Pods_HD_Video_Player.framework */,
-				67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */,
+				FCD7EFBF8EE9DEA75C19D01E6C7BEC54 /* SwiftyContextMenu */,
+				644BA0BE50AA0D2A4039DB306D3C067F /* VersaPlayer */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		EC22B0F0BF644182E5E12EE5B79F0952 /* Pods-HD Video Player */ = {
@@ -212,17 +290,36 @@
 			path = "Target Support Files/Pods-HD Video Player";
 			sourceTree = "<group>";
 		};
+		FCD7EFBF8EE9DEA75C19D01E6C7BEC54 /* SwiftyContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FB977410E3EEE6C2C454EA11C2840996 /* ContextMenu.swift */,
+				C2D6178880EC1A7F761092A1845787B7 /* ContextMenuActionTableViewCell.swift */,
+				2FA96EEDB8A6A3CD103D9802FA08D793 /* ContextMenuBackgroundBlurView.swift */,
+				F568394DFECC979BB5C3E4338349B9F8 /* ContextMenuBlurView.swift */,
+				C41B6CF83303105B4825B314FF74E428 /* ContextMenuContentBlurView.swift */,
+				BBD24F39EBA7CE9BC3BE08FA9176732E /* ContextMenuDelegate.swift */,
+				8E7BF2A8C3BC43556007CD67FE3744FB /* ContextMenuSeparatorView.swift */,
+				13FCA864594AF4B1F1D8C30935B4688F /* ContextMenuTableView.swift */,
+				7E2BB8F68619B959C1B5D5F618BBE3C3 /* ContextMenuTitleLabel.swift */,
+				E388BD8542E334538AD02B47BE31000F /* ContextMenuViewController.swift */,
+				F97D47D734FB18F528EA7FD4571058E0 /* ContextMenuWindow.swift */,
+				68A6F32F81DFC131981E5EE93BE8EFB9 /* IntensityVisualEffectView.swift */,
+				013278AD4D6CE8491FC9FAACFCA917C9 /* SeparatorView.swift */,
+				1225F4C3AE175BB3B3FCEC7AF9627779 /* UIColor+.swift */,
+				2324CB361D82CE79452C506F29212BC8 /* UIStackView+.swift */,
+				6BB982BCDA271BE7373437CF1D1FFDA1 /* UIView+.swift */,
+				0CEE6891ACA5C4D9AF6936776C1B0184 /* UIView+ContextMenu.swift */,
+				1C8AE9458DE7123146743A7658BAE8FC /* UIViewController+.swift */,
+				A772EA3394441BDB604578E09DFE1B7F /* Support Files */,
+			);
+			name = SwiftyContextMenu;
+			path = SwiftyContextMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5DE562DE17B354E6ED8B480CE62C2C73 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77329E061470AB69BDC53EB84325E023 /* Pods-HD Video Player-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B5181503FC244CB81550919E3E7C87E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,22 +328,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC589094A2964E6DA0E0819C803E3642 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A536266ECD8C067ED64BA93F1074F00 /* SwiftyContextMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D201CEA6CBC1A21043A77201198D08 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907C89DA6D96723AE428FF5ED76DBEA2 /* Pods-HD Video Player-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		562F3FDDCFB4F838759E3FACA4994E0C /* Pods-HD Video Player */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E5720FDF4B003DD7A8F3B31D9D4B69A /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */;
+			buildConfigurationList = 6F921E8F81635B7EE5AA7511F438CA70 /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */;
 			buildPhases = (
-				5DE562DE17B354E6ED8B480CE62C2C73 /* Headers */,
-				16AF3DB2C0E3AD2D7F8921045A4F8203 /* Sources */,
-				4A2CC64D5E9056D7E0B622026E6D923F /* Frameworks */,
-				303BBC81C36F9D582F24F607CFE9052E /* Resources */,
+				D2D201CEA6CBC1A21043A77201198D08 /* Headers */,
+				EA8D2BC8B5E615F447809F8CAA6A3C0E /* Sources */,
+				45B05120B45C2AE91DB77735A43A8333 /* Frameworks */,
+				EF46532E3FDAFBF38839AD6B7B43C83D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				307189480B3C383CB1613E9AED22EBEE /* PBXTargetDependency */,
+				7C88CE79738C4CD0FC1951BC9E1C830A /* PBXTargetDependency */,
+				5B740942437583C00269E69CF07B8963 /* PBXTargetDependency */,
 			);
 			name = "Pods-HD Video Player";
 			productName = "Pods-HD Video Player";
@@ -271,6 +385,24 @@
 			productReference = 67A4D4DD084F5BCCA66B326C45EF9C75 /* VersaPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F3AAC6D3E26D0AEC21B5F7687EDE11CF /* SwiftyContextMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7450476C9C4A057198AA3DE7055C613 /* Build configuration list for PBXNativeTarget "SwiftyContextMenu" */;
+			buildPhases = (
+				BC589094A2964E6DA0E0819C803E3642 /* Headers */,
+				A6252704579C9F52884355EB2FD38025 /* Sources */,
+				34AF8B9D3D76C1C953A3919BBCB1B252 /* Frameworks */,
+				74DE2AA4F847DEC76F1D6A55D431B480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyContextMenu;
+			productName = SwiftyContextMenu;
+			productReference = 971C829110A29E393839557831F31D90 /* SwiftyContextMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -279,11 +411,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					9C10FCC9230D7F2B427D6CDB50584B25 = {
-						LastSwiftMigration = 1230;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -294,18 +421,19 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DD1F1BA599CB2C36BF863628FFB36110 /* Products */;
+			productRefGroup = 86A1523C74900B5737A3F92DC758A049 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				562F3FDDCFB4F838759E3FACA4994E0C /* Pods-HD Video Player */,
+				F3AAC6D3E26D0AEC21B5F7687EDE11CF /* SwiftyContextMenu */,
 				9C10FCC9230D7F2B427D6CDB50584B25 /* VersaPlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		303BBC81C36F9D582F24F607CFE9052E /* Resources */ = {
+		74DE2AA4F847DEC76F1D6A55D431B480 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,17 +447,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		16AF3DB2C0E3AD2D7F8921045A4F8203 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		EF46532E3FDAFBF38839AD6B7B43C83D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1F5B7FD4BE5DCF9512B2DD2194C548 /* Pods-HD Video Player-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		9107EB9A28E671B1F17DDDDEE8E31F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,56 +483,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6252704579C9F52884355EB2FD38025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DBE7D4A623E3598E402A34FE78F2D /* ContextMenu.swift in Sources */,
+				C2485B34FA058F4E55095FDD1AE6C83E /* ContextMenuActionTableViewCell.swift in Sources */,
+				57BD86925A8D7364E47FCAFFCE83A0D4 /* ContextMenuBackgroundBlurView.swift in Sources */,
+				0CCF9A5D2F5C170C13D1B5DFFAC5E5C3 /* ContextMenuBlurView.swift in Sources */,
+				48E16EEAD5B07CE5740D6573BF29A3D7 /* ContextMenuContentBlurView.swift in Sources */,
+				D1F694D827BFA1C8BF98DB3CE0F014D6 /* ContextMenuDelegate.swift in Sources */,
+				73523F8E140CD1ACB3211C96123CCD0F /* ContextMenuSeparatorView.swift in Sources */,
+				762516BE81074DB321D9F6386DEAF7AC /* ContextMenuTableView.swift in Sources */,
+				776624FAF72AF720594F5D694D64A12A /* ContextMenuTitleLabel.swift in Sources */,
+				420BA0F68782065B3A79231C5F3BED8E /* ContextMenuViewController.swift in Sources */,
+				693D441EE984C76A27B05066A86AA92D /* ContextMenuWindow.swift in Sources */,
+				A8D93D903377439B1790827FEEDB99BC /* IntensityVisualEffectView.swift in Sources */,
+				E49D768B672D3C93EF899A9FB0A63C48 /* SeparatorView.swift in Sources */,
+				9DC276F9677786656382E0859DCC778B /* SwiftyContextMenu-dummy.m in Sources */,
+				DCF569E48195A676CA1F52627A3281B5 /* UIColor+.swift in Sources */,
+				AF4B618A3CCC3E6C68796B8BAF5D0FA9 /* UIStackView+.swift in Sources */,
+				6CFFA9D3DC7B827D9576B8BDB6A7A186 /* UIView+.swift in Sources */,
+				37519503A93127A7E8A0BFC01318AD0C /* UIView+ContextMenu.swift in Sources */,
+				419966991063050CEB78B6F37E24DEF3 /* UIViewController+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8D2BC8B5E615F447809F8CAA6A3C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B1424BFA252AC77F41B015A2472BF7 /* Pods-HD Video Player-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		307189480B3C383CB1613E9AED22EBEE /* PBXTargetDependency */ = {
+		5B740942437583C00269E69CF07B8963 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VersaPlayer;
 			target = 9C10FCC9230D7F2B427D6CDB50584B25 /* VersaPlayer */;
-			targetProxy = 8E0B4FAAA670EE27C40EAD7505DCEE9E /* PBXContainerItemProxy */;
+			targetProxy = 3A2EE17F87D2EA7199F3B590D1B24DD0 /* PBXContainerItemProxy */;
+		};
+		7C88CE79738C4CD0FC1951BC9E1C830A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyContextMenu;
+			target = F3AAC6D3E26D0AEC21B5F7687EDE11CF /* SwiftyContextMenu */;
+			targetProxy = 3697EFF00B03357B85C32D818525AA81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		113819366B1B2E3E2EBBA54AB2908133 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		201519B3FA3428087107CA0886180A22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -534,7 +663,7 @@
 		};
 		30503DC2253A4DF9F08E30F1E29187B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */;
+			baseConfigurationReference = 7BB71553D1D2016F5CD60B9F86548EF8 /* VersaPlayer.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -559,49 +688,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		482A7F53C7CE68495B1375C11419E563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ABA4B4B5E4AE7535C258F75C0D5A997 /* VersaPlayer.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VersaPlayer/VersaPlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VersaPlayer/VersaPlayer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/VersaPlayer/VersaPlayer.modulemap";
-				PRODUCT_MODULE_NAME = VersaPlayer;
-				PRODUCT_NAME = VersaPlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		94312675D398D25F777D77E1A9056910 /* Debug */ = {
+		313E22DA70CA5DD4A05CF0B6DEA551C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A74731F19D5362C6AF06BB992E360BF8 /* Pods-HD Video Player.debug.xcconfig */;
 			buildSettings = {
@@ -638,6 +732,150 @@
 			};
 			name = Debug;
 		};
+		417060078DACC798DB54730EED080BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F785F57D04BE7BD744D31808205025D /* Pods-HD Video Player.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		482A7F53C7CE68495B1375C11419E563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB71553D1D2016F5CD60B9F86548EF8 /* VersaPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VersaPlayer/VersaPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VersaPlayer/VersaPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VersaPlayer/VersaPlayer.modulemap";
+				PRODUCT_MODULE_NAME = VersaPlayer;
+				PRODUCT_NAME = VersaPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A8DB5F760ABCF66F3F54F0A9DE33F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B088EA43FCFE9617E041A6AD343CD78 /* SwiftyContextMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyContextMenu;
+				PRODUCT_NAME = SwiftyContextMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D32212A32017E83F9CBE52079910567B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B088EA43FCFE9617E041A6AD343CD78 /* SwiftyContextMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyContextMenu/SwiftyContextMenu.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyContextMenu;
+				PRODUCT_NAME = SwiftyContextMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -659,11 +897,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E5720FDF4B003DD7A8F3B31D9D4B69A /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */ = {
+		6F921E8F81635B7EE5AA7511F438CA70 /* Build configuration list for PBXNativeTarget "Pods-HD Video Player" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94312675D398D25F777D77E1A9056910 /* Debug */,
-				113819366B1B2E3E2EBBA54AB2908133 /* Release */,
+				313E22DA70CA5DD4A05CF0B6DEA551C1 /* Debug */,
+				417060078DACC798DB54730EED080BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7450476C9C4A057198AA3DE7055C613 /* Build configuration list for PBXNativeTarget "SwiftyContextMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32212A32017E83F9CBE52079910567B /* Debug */,
+				6A8DB5F760ABCF66F3F54F0A9DE33F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
