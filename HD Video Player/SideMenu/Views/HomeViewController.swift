@@ -14,14 +14,16 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
   
     @IBOutlet var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var VCollectionView: UICollectionView!
-    
     var allUrls = [URL]()
     var videoDate = [AVMetadataItem?]()
     var videoduration = [CMTime]()
     var selectedIndex = 0
     var VideoFileSize = ""
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        navControl()
+        fetchAllVideos()
         navigationController?.navigationBar.tintColor = .white
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
@@ -32,6 +34,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func Video_refresh(_ sender: UIBarButtonItem) {
     }
     @IBAction func Video_moreMenu(_ sender: UIBarButtonItem) {
+        let ShortBy = UIAction(title: "Short By") { _ in
+            print("Short By")}
+        let ViewAs = UIAction(title: "View As") { _ in
+            print("View As")}
+        let menu = UIMenu(title: "More", children: [ShortBy,ViewAs])
+        sender.menu = menu
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,7 +51,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         fetchOptions.predicate = NSPredicate(format: "title = %@")
         fetchOptions.predicate = NSPredicate(format: "mediaType = %d ", PHAssetMediaType.video.rawValue )
         let allVideo = PHAsset.fetchAssets(with: .video, options: fetchOptions)
-        
         allVideo.enumerateObjects { (asset, index, bool) in
             let imageManager = PHCachingImageManager()
             imageManager.requestAVAsset(forVideo: asset, options: nil, resultHandler: { (asset, audioMix, info) in
@@ -54,6 +61,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
                         self.allUrls.append(urlVideo)
                         self.videoDate.append(asset!.creationDate)
                         self.videoduration.append(asset!.duration)
+                        print(urlVideo)
                     }
                 }
             })
@@ -103,7 +111,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath) as! HomeViewCell
-        cell.videoImage.image = getThumbnailImage(forUrl: allUrls[indexPath.row])
         cell.videoDatelbl.text = videoDate[indexPath.row]?.dateValue?.debugDescription
         cell.Videotimelbl.text = self.geTimefromSecond(second: Int(videoduration[indexPath.row].seconds))
         cell.videoNamelbl.text = allUrls[indexPath.row].lastPathComponent

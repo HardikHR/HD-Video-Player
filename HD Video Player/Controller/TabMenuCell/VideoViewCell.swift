@@ -7,7 +7,8 @@
 
 import UIKit
 import AVFoundation
-class VideoViewCell: UITableViewCell ,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+
+class VideoViewCell: UITableViewCell{
     
     @IBOutlet weak var lblVideoSize: UILabel!
     @IBOutlet weak var lblVideoName: UILabel!
@@ -16,8 +17,6 @@ class VideoViewCell: UITableViewCell ,UIImagePickerControllerDelegate, UINavigat
     @IBOutlet weak var btnMore: UIButton!
     @IBOutlet weak var imgVideo: UIImageView!
     
-    let imagePickerController = UIImagePickerController()
-
     var videoURL: URL?
     
     override func awakeFromNib() {

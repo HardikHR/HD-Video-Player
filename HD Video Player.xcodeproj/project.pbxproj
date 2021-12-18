@@ -127,7 +127,7 @@
 		2249CC43272BD45C0067A98D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				22CD5CCF272BEBB600E5935A /* ManuCell */,
+				22CD5CCF272BEBB600E5935A /* TabMenuCell */,
 				22A41E3A272BF606000B760C /* TabBarController */,
 			);
 			path = Controller;
@@ -178,7 +178,7 @@
 			path = "HD Video Player";
 			sourceTree = "<group>";
 		};
-		22CD5CCF272BEBB600E5935A /* ManuCell */ = {
+		22CD5CCF272BEBB600E5935A /* TabMenuCell */ = {
 			isa = PBXGroup;
 			children = (
 				22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */,
@@ -186,7 +186,7 @@
 				22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */,
 				22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */,
 			);
-			path = ManuCell;
+			path = TabMenuCell;
 			sourceTree = "<group>";
 		};
 		841C151815159A3E5D3858EB /* Frameworks */ = {

@@ -10,10 +10,15 @@ import UIKit
 class RecentViewController: UITableViewController {
 
     @IBOutlet var recentTableView: UITableView!
+    @IBOutlet weak var menu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navControl()
+//        navigationController?.navigationBar.tintColor = .white
+//        menu.target = self.revealViewController()
+//        menu.action = #selector(self.revealViewController()?.revealSideMenu)
+        
         let searchButton = UIBarButtonItem(image: UIImage.init(named: "refresh"),  style: .plain, target: self, action: nil)
         let editButton = UIBarButtonItem(image: UIImage.init(named: "search"),  style: .plain, target: self, action: nil)
         let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)

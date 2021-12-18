@@ -12,6 +12,7 @@ import VersaPlayer
 
 class VideoViewController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var menu: UIBarButtonItem!
     @IBOutlet var videoTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var allUrls = [URL]()
@@ -37,6 +38,9 @@ class VideoViewController: UITableViewController, UISearchBarDelegate {
         navControl()
         fetchAllVideos()
         videoTableView.backgroundColor = .black
+//        navigationController?.navigationBar.tintColor = .white
+//        menu.target = self.revealViewController()
+//        menu.action = #selector(self.revealViewController()?.revealSideMenu)
         
 //        self.sideMenuShadowView = UIView(frame: self.view.bounds)
 //        self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -142,13 +146,14 @@ class VideoViewController: UITableViewController, UISearchBarDelegate {
     }
     
     @IBAction func refresh(_ sender: UIBarButtonItem) {
-        videoTableView.reloadData()
+        tableView.reloadData()
     }
     
     @IBAction func searchVideo(_ sender: UIBarButtonItem) {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barStyle = .black
-        self.navigationController?.navigationBar.tintColor = UIColor.white    }
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false

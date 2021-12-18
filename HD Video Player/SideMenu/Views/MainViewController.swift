@@ -9,7 +9,7 @@ import SafariServices
 import UIKit
 
 class MainViewController: UIViewController {
-    
+
     private var sideMenuViewController: SideMenuViewController!
     private var sideMenuShadowView: UIView!
     private var sideMenuRevealWidth: CGFloat = 260
@@ -20,8 +20,8 @@ class MainViewController: UIViewController {
     private var sideMenuTrailingConstraint: NSLayoutConstraint!
     private var revealSideMenuOnTop: Bool = true
     var gestureEnabled: Bool = true
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
@@ -98,7 +98,7 @@ class MainViewController: UIViewController {
             UIView.animate(withDuration: 0.5) { self.sideMenuShadowView.alpha = 0.0 }
         }
     }
-    
+
     func animateSideMenu(targetPosition: CGFloat, completion: @escaping (Bool) -> ()) {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: .layoutSubviews, animations: {
             if self.revealSideMenuOnTop {
@@ -125,6 +125,12 @@ extension MainViewController: SideMenuViewControllerDelegate {
             self.showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
         case 1:
             self.showViewController(viewController: UINavigationController.self, storyboardId: "MoviesNavID")
+//        case 2:
+//            self.showViewController(viewController: UINavigationController.self, storyboardId: "videoID")
+//        case 3:
+//            self.showViewController(viewController: UINavigationController.self, storyboardId: "folderID")
+//        case 4:
+//            self.showViewController(viewController: UINavigationController.self, storyboardId: "recentID")
         default:
             break
         }
@@ -174,10 +180,10 @@ extension MainViewController: UIGestureRecognizerDelegate {
         }
         return true
     }
-    
+
     // Dragging Side Menu
     @objc private func handlePanGesture(sender: UIPanGestureRecognizer) {
-        
+
         guard gestureEnabled == true else { return }
 
         let position: CGFloat = sender.translation(in: self.view).x
@@ -256,7 +262,7 @@ extension MainViewController: UIGestureRecognizerDelegate {
 extension UIViewController {
         func revealViewController() -> MainViewController? {
         var viewController: UIViewController? = self
-        
+
         if viewController != nil && viewController is MainViewController {
             return viewController! as? MainViewController
         }

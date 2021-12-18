@@ -24,6 +24,9 @@ class SideMenuViewController: UIViewController {
     var menu: [SideMenuModel] = [
         SideMenuModel(icon: UIImage(systemName: "house.fill")!, title: "Home"),
         SideMenuModel(icon: UIImage(systemName: "film.fill")!, title: "Movies"),
+//        SideMenuModel(icon: UIImage(systemName: "video")!, title: "Video"),
+//        SideMenuModel(icon: UIImage(systemName: "folder")!, title: "Folder"),
+//        SideMenuModel(icon: UIImage(systemName: "timer")!, title: "Recent"),
      ]
 
     override func viewDidLoad() {
