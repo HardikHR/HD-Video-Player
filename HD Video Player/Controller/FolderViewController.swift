@@ -1,38 +1,36 @@
 //
-//  RecentViewController.swift
+//  FolderViewController.swift
 //  HD Video Player
 //
 //  Created by macOS on 29/10/21.
 //
 
 import UIKit
-
-class RecentViewController: UITableViewController {
-
-    @IBOutlet var recentTableView: UITableView!
+class FolderViewController: UITableViewController {
+    
+    @IBOutlet var folderTableview: UITableView!
     @IBOutlet weak var menu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navControl()
-//        navigationController?.navigationBar.tintColor = .white
-//        menu.target = self.revealViewController()
-//        menu.action = #selector(self.revealViewController()?.revealSideMenu)
-        
-        let searchButton = UIBarButtonItem(image: UIImage.init(named: "refresh"),  style: .plain, target: self, action: nil)
-        let editButton = UIBarButtonItem(image: UIImage.init(named: "search"),  style: .plain, target: self, action: nil)
-        let morebtn = UIBarButtonItem(image: UIImage(named: "more")!,  style: .plain, target: self, action: nil)
-        navigationItem.rightBarButtonItems = [searchButton, editButton ,morebtn]
+        navigationController?.navigationBar.tintColor = .white
+        menu.target = self.revealViewController()
+        menu.action = #selector(self.revealViewController()?.revealSideMenu)
     }
     
-    @IBAction func MoreItem(_ sender: UIBarButtonItem) {
+    @IBAction func SideMenu(_ sender: Any) {
     }
-    @IBAction func refreshbtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func SearchBtn(_ sender: Any) {
     }
-    @IBAction func Searchbtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func refreshBtn(_ sender: UIBarButtonItem) {
     }
-    @IBAction func sideMenu(_ sender: UIBarButtonItem) {
+    
+    @IBAction func MoreBtn(_ sender: UIBarButtonItem) {
     }
+    
     func navControl() {
        if self.navigationController == nil {
            return
@@ -54,4 +52,14 @@ class RecentViewController: UITableViewController {
        self.navigationItem.titleView = navView
        navView.sizeToFit()
    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FolderViewCell", for: indexPath) as! FolderViewCell
+        cell.backgroundColor = .black
+        return cell
+    }
 }

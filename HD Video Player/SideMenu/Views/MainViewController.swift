@@ -8,7 +8,7 @@
 import SafariServices
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITabBarDelegate {
 
     private var sideMenuViewController: SideMenuViewController!
     private var sideMenuShadowView: UIView!
@@ -20,8 +20,8 @@ class MainViewController: UIViewController {
     private var sideMenuTrailingConstraint: NSLayoutConstraint!
     private var revealSideMenuOnTop: Bool = true
     var gestureEnabled: Bool = true
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
@@ -33,10 +33,9 @@ class MainViewController: UIViewController {
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
         view.addGestureRecognizer(tapGestureRecognizer)
-        if self.revealSideMenuOnTop {
+         if self.revealSideMenuOnTop {
             view.insertSubview(self.sideMenuShadowView, at: 1)
         }
-
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         self.sideMenuViewController = storyboard.instantiateViewController(withIdentifier: "SideMenuID") as? SideMenuViewController
         self.sideMenuViewController.defaultHighlightedCell = 0 // Default Highlighted Cell
@@ -45,7 +44,7 @@ class MainViewController: UIViewController {
         addChild(self.sideMenuViewController!)
         self.sideMenuViewController!.didMove(toParent: self)
         self.sideMenuViewController.view.translatesAutoresizingMaskIntoConstraints = false
-
+        
         if self.revealSideMenuOnTop {
             self.sideMenuTrailingConstraint = self.sideMenuViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -self.sideMenuRevealWidth - self.paddingForRotation)
             self.sideMenuTrailingConstraint.isActive = true
@@ -55,13 +54,12 @@ class MainViewController: UIViewController {
             self.sideMenuViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             self.sideMenuViewController.view.topAnchor.constraint(equalTo: view.topAnchor)
         ])
-
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
         panGestureRecognizer.delegate = self
         view.addGestureRecognizer(panGestureRecognizer)
-        showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
+       showViewController(viewController: UINavigationController.self, storyboardId: "videoID")
     }
-    // Keep the state of the side menu (expanded or collapse) in rotation
+     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         coordinator.animate { _ in
@@ -70,18 +68,18 @@ class MainViewController: UIViewController {
             }
         }
     }
-
+    
     func animateShadow(targetPosition: CGFloat) {
         UIView.animate(withDuration: 0.5) {
             // When targetPosition is 0, which means side menu is expanded, the shadow opacity is 0.6
             self.sideMenuShadowView.alpha = (targetPosition == 0) ? 0.6 : 0.0
         }
     }
-
+    
     @IBAction open func revealSideMenu() {
         self.sideMenuState(expanded: self.isExpanded ? false : true)
     }
-
+    
     func sideMenuState(expanded: Bool) {
         if expanded {
             self.animateSideMenu(targetPosition: self.revealSideMenuOnTop ? 0 : self.sideMenuRevealWidth) { _ in
@@ -98,7 +96,7 @@ class MainViewController: UIViewController {
             UIView.animate(withDuration: 0.5) { self.sideMenuShadowView.alpha = 0.0 }
         }
     }
-
+    
     func animateSideMenu(targetPosition: CGFloat, completion: @escaping (Bool) -> ()) {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: .layoutSubviews, animations: {
             if self.revealSideMenuOnTop {
@@ -110,35 +108,30 @@ class MainViewController: UIViewController {
             }
         }, completion: completion)
     }
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }
 
-                                                // MARK: - SIDEMENU VIEW -
+// MARK: - SIDEMENU VIEW -
 
 extension MainViewController: SideMenuViewControllerDelegate {
     func selectedCell(_ row: Int) {
         switch row {
         case 0:
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "videoID")
         case 1:
-            self.showViewController(viewController: UINavigationController.self, storyboardId: "MoviesNavID")
-//        case 2:
-//            self.showViewController(viewController: UINavigationController.self, storyboardId: "videoID")
-//        case 3:
-//            self.showViewController(viewController: UINavigationController.self, storyboardId: "folderID")
-//        case 4:
-//            self.showViewController(viewController: UINavigationController.self, storyboardId: "recentID")
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "folderID")
+        case 2:
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "recentID")
         default:
             break
         }
-
         // Collapse side menu with animation
         DispatchQueue.main.async { self.sideMenuState(expanded: false) }
     }
-
+    
     func showViewController<T: UIViewController>(viewController: T.Type, storyboardId: String) -> () {
         // Remove the previous View
         for subview in view.subviews {
@@ -162,8 +155,6 @@ extension MainViewController: SideMenuViewControllerDelegate {
         vc.didMove(toParent: self)
     }
 }
-
-                                                    // MARK: ------ NAVIGATION VIEW ------
 
 extension MainViewController: UIGestureRecognizerDelegate {
         @objc func TapGestureRecognizer(sender: UITapGestureRecognizer) {
@@ -200,7 +191,6 @@ extension MainViewController: UIGestureRecognizerDelegate {
             else if velocity < 0, self.isExpanded {
                 self.draggingIsEnabled = true
             }
-
             if self.draggingIsEnabled {
                 let velocityThreshold: CGFloat = 550
                 if abs(velocity) > velocityThreshold {
@@ -208,7 +198,6 @@ extension MainViewController: UIGestureRecognizerDelegate {
                     self.draggingIsEnabled = false
                     return
                 }
-
                 if self.revealSideMenuOnTop {
                     self.panBaseLocation = 0.0
                     if self.isExpanded {
@@ -216,7 +205,6 @@ extension MainViewController: UIGestureRecognizerDelegate {
                     }
                 }
             }
-
         case .changed:
             if self.draggingIsEnabled {
                 if self.revealSideMenuOnTop {
@@ -260,9 +248,9 @@ extension MainViewController: UIGestureRecognizerDelegate {
 }
 
 extension UIViewController {
-        func revealViewController() -> MainViewController? {
+    func revealViewController() -> MainViewController? {
         var viewController: UIViewController? = self
-
+        
         if viewController != nil && viewController is MainViewController {
             return viewController! as? MainViewController
         }

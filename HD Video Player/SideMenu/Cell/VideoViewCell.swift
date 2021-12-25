@@ -1,30 +1,25 @@
 //
-//  VideoViewCell.swift
+//  HomeViewCell.swift
 //  HD Video Player
 //
-//  Created by macOS on 29/10/21.
+//  Created by macOS on 17/12/21.
 //
 
 import UIKit
-import AVFoundation
 
-class VideoViewCell: UITableViewCell{
+class VideoViewCell: UITableViewCell {
     
-    @IBOutlet weak var lblVideoSize: UILabel!
-    @IBOutlet weak var lblVideoName: UILabel!
-    @IBOutlet weak var lblVideoDuration: UILabel!
-    @IBOutlet weak var lblVideoDate: UILabel!
+
+    @IBOutlet weak var videoImage: UIImageView!
+    @IBOutlet weak var videoDatelbl: UILabel!
+    @IBOutlet weak var Videotimelbl: UILabel!
+    @IBOutlet weak var videoNamelbl: UILabel!
+    @IBOutlet weak var videoSizelbl: UILabel!
     @IBOutlet weak var btnMore: UIButton!
-    @IBOutlet weak var imgVideo: UIImageView!
     
-    var videoURL: URL?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        lblVideoDuration.textColor = .white
-    }
-
-    @IBAction func btnMoreOption(_ sender: UIButton) {
+    
+    @IBAction func btnMore(_ sender: UIButton) {
         let Rename = UIAction(title: "Rename") { _ in
             print("Rename")}
         let Hide = UIAction(title: "Hide") { _ in

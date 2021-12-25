@@ -7,13 +7,14 @@
 
 import UIKit
 
-class HomeViewCell: UICollectionViewCell {
+class VideoViewCell: UITableViewCell {
     
     @IBOutlet weak var videoImage: UIImageView!
     @IBOutlet weak var Videotimelbl: UILabel!
     @IBOutlet weak var videoNamelbl: UILabel!
     @IBOutlet weak var videoDatelbl: UILabel!
     @IBOutlet weak var videoSizelbl: UILabel!
+    @IBOutlet weak var btnMore: UIButton!
     
     
     @IBAction func btnMore(_ sender: UIButton) {

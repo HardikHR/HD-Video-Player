@@ -7,48 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2211B9262763556500EE8F3B /* HIdeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */; };
+		221F26EF2774738000CA7E63 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F26EE2774738000CA7E63 /* RecentViewController.swift */; };
 		222BF2A9276C5C13009CEBC4 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2A8276C5C13009CEBC4 /* SideMenuViewController.swift */; };
 		222BF2AE276C5C31009CEBC4 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2AC276C5C30009CEBC4 /* SideMenuCell.swift */; };
 		222BF2AF276C5C31009CEBC4 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222BF2AD276C5C31009CEBC4 /* SideMenuCell.xib */; };
-		222BF2B6276C5E1B009CEBC4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2B4276C5E1B009CEBC4 /* HomeViewController.swift */; };
-		222BF2C8276C7FFE009CEBC4 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2C7276C7FFE009CEBC4 /* MoviesViewController.swift */; };
 		222BF2D0276C9F2D009CEBC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2CF276C9F2D009CEBC4 /* MainViewController.swift */; };
-		222BF2D5276CA3CD009CEBC4 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2D4276CA3CD009CEBC4 /* HomeViewCell.swift */; };
-		223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454AB2762070E0033B24D /* MainTabBarViewController.swift */; };
-		223454C527620BC80033B24D /* MenuItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223454C427620BC80033B24D /* MenuItemController.swift */; };
-		224236C52769B38A004650F9 /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224236C42769B38A004650F9 /* VideoPlay.swift */; };
-		2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC46272BD5790067A98D /* VideoViewController.swift */; };
-		2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC49272BD5A00067A98D /* FolderViewController.swift */; };
-		2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249CC4C272BD5EF0067A98D /* RecentViewController.swift */; };
+		222BF2D5276CA3CD009CEBC4 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BF2D4276CA3CD009CEBC4 /* VideoViewCell.swift */; };
+		223FA8642775C50300FA269C /* detailPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FA8632775C50300FA269C /* detailPopup.swift */; };
+		2260DB722774708C005B76AD /* FolderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260DB712774708C005B76AD /* FolderViewCell.swift */; };
+		2260DB75277470A9005B76AD /* RecentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260DB74277470A9005B76AD /* RecentViewCell.swift */; };
 		22BE8A22272AC8C300539161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE8A21272AC8C300539161 /* AppDelegate.swift */; };
 		22BE8A24272AC8C300539161 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE8A23272AC8C300539161 /* SceneDelegate.swift */; };
 		22BE8A29272AC8C300539161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BE8A27272AC8C300539161 /* Main.storyboard */; };
 		22BE8A2B272AC8C400539161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BE8A2A272AC8C400539161 /* Assets.xcassets */; };
 		22BE8A2E272AC8C400539161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BE8A2C272AC8C400539161 /* LaunchScreen.storyboard */; };
-		22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */; };
-		22CD5CCA272BEB9F00E5935A /* FolderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */; };
-		22CD5CCD272BEBAB00E5935A /* RecentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */; };
+		22D9040427718C82000BDE1B /* HomePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9040327718C82000BDE1B /* HomePlay.swift */; };
+		22D9FDDD2776D4570075515B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9FDD72776D4560075515B /* MainTabBarViewController.swift */; };
+		22D9FDDE2776D4570075515B /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9FDD82776D4560075515B /* FolderViewController.swift */; };
+		22D9FDDF2776D4570075515B /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9FDD92776D4560075515B /* VideoViewController.swift */; };
+		22D9FDE02776D4570075515B /* HIdeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9FDDA2776D4570075515B /* HIdeVideoViewController.swift */; };
+		22D9FDE12776D4570075515B /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9FDDB2776D4570075515B /* VideoPlay.swift */; };
 		22FD1DF027607932005C4367 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD1DEF27607932005C4367 /* Model.swift */; };
 		7B3B90D3B052CA1162C75269 /* Pods_HD_Video_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D0ABFBFC6F187AEF852798 /* Pods_HD_Video_Player.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1283BCE52EB52192F3CBF410 /* Pods-HD Video Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HD Video Player.release.xcconfig"; path = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.release.xcconfig"; sourceTree = "<group>"; };
-		2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIdeVideoViewController.swift; sourceTree = "<group>"; };
+		221F26EE2774738000CA7E63 /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
 		222BF2A8276C5C13009CEBC4 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		222BF2AC276C5C30009CEBC4 /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		222BF2AD276C5C31009CEBC4 /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
-		222BF2B4276C5E1B009CEBC4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		222BF2C7276C7FFE009CEBC4 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		222BF2CF276C9F2D009CEBC4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		222BF2D4276CA3CD009CEBC4 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
-		223454AB2762070E0033B24D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		223454C427620BC80033B24D /* MenuItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemController.swift; sourceTree = "<group>"; };
-		224236C42769B38A004650F9 /* VideoPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlay.swift; sourceTree = "<group>"; };
-		2249CC46272BD5790067A98D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		2249CC49272BD5A00067A98D /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
-		2249CC4C272BD5EF0067A98D /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
+		222BF2D4276CA3CD009CEBC4 /* VideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
+		223FA8632775C50300FA269C /* detailPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailPopup.swift; sourceTree = "<group>"; };
+		2260DB712774708C005B76AD /* FolderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewCell.swift; sourceTree = "<group>"; };
+		2260DB74277470A9005B76AD /* RecentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewCell.swift; sourceTree = "<group>"; };
 		22BE8A1E272AC8C300539161 /* HD Video Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HD Video Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BE8A21272AC8C300539161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BE8A23272AC8C300539161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +49,12 @@
 		22BE8A2A272AC8C400539161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BE8A2D272AC8C400539161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BE8A2F272AC8C400539161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
-		22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewCell.swift; sourceTree = "<group>"; };
-		22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewCell.swift; sourceTree = "<group>"; };
+		22D9040327718C82000BDE1B /* HomePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlay.swift; sourceTree = "<group>"; };
+		22D9FDD72776D4560075515B /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		22D9FDD82776D4560075515B /* FolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
+		22D9FDD92776D4560075515B /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		22D9FDDA2776D4570075515B /* HIdeVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIdeVideoViewController.swift; sourceTree = "<group>"; };
+		22D9FDDB2776D4570075515B /* VideoPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlay.swift; sourceTree = "<group>"; };
 		22FD1DEF27607932005C4367 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8CF525B18247C157F137A1BD /* Pods-HD Video Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HD Video Player.debug.xcconfig"; path = "Target Support Files/Pods-HD Video Player/Pods-HD Video Player.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D0ABFBFC6F187AEF852798 /* Pods_HD_Video_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HD_Video_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				222BF2B2276C5E0D009CEBC4 /* Views */,
-				222BF2A8276C5C13009CEBC4 /* SideMenuViewController.swift */,
 				222BF2AB276C5C1D009CEBC4 /* Cell */,
 			);
 			path = SideMenu;
@@ -89,9 +84,11 @@
 		222BF2AB276C5C1D009CEBC4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				222BF2AC276C5C30009CEBC4 /* SideMenuCell.swift */,
 				222BF2AD276C5C31009CEBC4 /* SideMenuCell.xib */,
-				222BF2D4276CA3CD009CEBC4 /* HomeViewCell.swift */,
+				222BF2AC276C5C30009CEBC4 /* SideMenuCell.swift */,
+				2260DB74277470A9005B76AD /* RecentViewCell.swift */,
+				222BF2D4276CA3CD009CEBC4 /* VideoViewCell.swift */,
+				2260DB712774708C005B76AD /* FolderViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -99,9 +96,8 @@
 		222BF2B2276C5E0D009CEBC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				222BF2B4276C5E1B009CEBC4 /* HomeViewController.swift */,
-				222BF2C7276C7FFE009CEBC4 /* MoviesViewController.swift */,
 				222BF2CF276C9F2D009CEBC4 /* MainViewController.swift */,
+				222BF2A8276C5C13009CEBC4 /* SideMenuViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +105,8 @@
 		2249CC41272BD4420067A98D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22D9040327718C82000BDE1B /* HomePlay.swift */,
+				223FA8632775C50300FA269C /* detailPopup.swift */,
 				22FD1DEF27607932005C4367 /* Model.swift */,
 			);
 			path = Model;
@@ -127,23 +125,14 @@
 		2249CC43272BD45C0067A98D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				22CD5CCF272BEBB600E5935A /* TabMenuCell */,
-				22A41E3A272BF606000B760C /* TabBarController */,
+				22D9FDD92776D4560075515B /* VideoViewController.swift */,
+				22D9FDD82776D4560075515B /* FolderViewController.swift */,
+				221F26EE2774738000CA7E63 /* RecentViewController.swift */,
+				22D9FDDA2776D4570075515B /* HIdeVideoViewController.swift */,
+				22D9FDD72776D4560075515B /* MainTabBarViewController.swift */,
+				22D9FDDB2776D4570075515B /* VideoPlay.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		22A41E3A272BF606000B760C /* TabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				2249CC46272BD5790067A98D /* VideoViewController.swift */,
-				223454AB2762070E0033B24D /* MainTabBarViewController.swift */,
-				2211B9252763556500EE8F3B /* HIdeVideoViewController.swift */,
-				2249CC49272BD5A00067A98D /* FolderViewController.swift */,
-				2249CC4C272BD5EF0067A98D /* RecentViewController.swift */,
-				224236C42769B38A004650F9 /* VideoPlay.swift */,
-			);
-			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		22BE8A15272AC8C300539161 = {
@@ -176,17 +165,6 @@
 				22BE8A2F272AC8C400539161 /* Info.plist */,
 			);
 			path = "HD Video Player";
-			sourceTree = "<group>";
-		};
-		22CD5CCF272BEBB600E5935A /* TabMenuCell */ = {
-			isa = PBXGroup;
-			children = (
-				22CD5CC6272BEB8A00E5935A /* VideoViewCell.swift */,
-				223454C427620BC80033B24D /* MenuItemController.swift */,
-				22CD5CC9272BEB9F00E5935A /* FolderViewCell.swift */,
-				22CD5CCC272BEBAB00E5935A /* RecentViewCell.swift */,
-			);
-			path = TabMenuCell;
 			sourceTree = "<group>";
 		};
 		841C151815159A3E5D3858EB /* Frameworks */ = {
@@ -321,25 +299,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2249CC4A272BD5A00067A98D /* FolderViewController.swift in Sources */,
-				224236C52769B38A004650F9 /* VideoPlay.swift in Sources */,
-				223454AC2762070E0033B24D /* MainTabBarViewController.swift in Sources */,
-				222BF2B6276C5E1B009CEBC4 /* HomeViewController.swift in Sources */,
-				22CD5CC7272BEB8A00E5935A /* VideoViewCell.swift in Sources */,
+				22D9040427718C82000BDE1B /* HomePlay.swift in Sources */,
+				22D9FDDF2776D4570075515B /* VideoViewController.swift in Sources */,
 				222BF2A9276C5C13009CEBC4 /* SideMenuViewController.swift in Sources */,
-				222BF2D5276CA3CD009CEBC4 /* HomeViewCell.swift in Sources */,
-				223454C527620BC80033B24D /* MenuItemController.swift in Sources */,
-				2211B9262763556500EE8F3B /* HIdeVideoViewController.swift in Sources */,
+				222BF2D5276CA3CD009CEBC4 /* VideoViewCell.swift in Sources */,
+				2260DB722774708C005B76AD /* FolderViewCell.swift in Sources */,
+				223FA8642775C50300FA269C /* detailPopup.swift in Sources */,
+				22D9FDDE2776D4570075515B /* FolderViewController.swift in Sources */,
+				221F26EF2774738000CA7E63 /* RecentViewController.swift in Sources */,
 				22BE8A22272AC8C300539161 /* AppDelegate.swift in Sources */,
-				222BF2C8276C7FFE009CEBC4 /* MoviesViewController.swift in Sources */,
-				2249CC4D272BD5EF0067A98D /* RecentViewController.swift in Sources */,
+				22D9FDDD2776D4570075515B /* MainTabBarViewController.swift in Sources */,
+				22D9FDE02776D4570075515B /* HIdeVideoViewController.swift in Sources */,
+				2260DB75277470A9005B76AD /* RecentViewCell.swift in Sources */,
 				22FD1DF027607932005C4367 /* Model.swift in Sources */,
 				222BF2D0276C9F2D009CEBC4 /* MainViewController.swift in Sources */,
-				2249CC47272BD5790067A98D /* VideoViewController.swift in Sources */,
 				222BF2AE276C5C31009CEBC4 /* SideMenuCell.swift in Sources */,
-				22CD5CCA272BEB9F00E5935A /* FolderViewCell.swift in Sources */,
-				22CD5CCD272BEBAB00E5935A /* RecentViewCell.swift in Sources */,
 				22BE8A24272AC8C300539161 /* SceneDelegate.swift in Sources */,
+				22D9FDE12776D4570075515B /* VideoPlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +463,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HD\\ Video\\ Player",
+				);
 				INFOPLIST_FILE = "HD Video Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,7 +487,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HD\\ Video\\ Player",
+				);
 				INFOPLIST_FILE = "HD Video Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
