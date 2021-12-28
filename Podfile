@@ -8,6 +8,8 @@ target 'HD Video Player' do
   # Pods for HD Video Player
 
   pod 'VersaPlayer'
-pod 'SwiftyContextMenu'
+  pod 'SwiftyContextMenu'
+  pod 'SideMenuSwift'
+
 
 end

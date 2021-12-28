@@ -10,17 +10,21 @@ import Photos
 import AVKit
 import VersaPlayer
 
-class VideoViewController: UITableViewController, UISearchBarDelegate{
+class VideoViewController: UITableViewController{
     
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    @IBOutlet var VideoCollectionView: UITableView!
+    @IBOutlet var VideoTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var videoduration = [CMTime]()
     var selectedIndex = 0
     var model = [VideoModel]()
+    var searchModel = [VideoModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
+        VideoTableView.reloadData()
         navControl()
         fetchAllVideos()
         navigationController?.navigationBar.tintColor = .white
@@ -31,6 +35,7 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
     @IBAction func Video_searchBar(_ sender: UIBarButtonItem) {
     }
     @IBAction func Video_refresh(_ sender: UIBarButtonItem) {
+        self.VideoTableView.reloadData()
     }
     @IBAction func Video_moreMenu(_ sender: UIBarButtonItem) {
         let ShortBy = UIAction(title: "Short By") { _ in
@@ -44,7 +49,6 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
     }
-    
     
     func fetchAllVideos() {
         let fetchOptions = PHFetchOptions()
@@ -74,7 +78,7 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
             })
         }
         DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
-            self.VideoCollectionView.reloadData()
+            self.VideoTableView.reloadData()
         })
     }
     
@@ -113,22 +117,30 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
+        if (self.searchBar.text?.count ?? 0) > 0{
+            return searchModel.count
+        }else{
+            return model.count
+        }
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoViewCell", for: indexPath) as! VideoViewCell
-        let modelobj = model[indexPath.row]
-        cell.videoImage.image = getThumbnailImage(forUrl: URL(fileURLWithPath: modelobj.Video_URL)) //allUrls[indexPath.row]
-        cell.videoDatelbl.text = modelobj.Video_date?.dateValue?.description //videoDate[indexPath.row]?.dateValue?.debugDescription
+        var modelobj = model[indexPath.row]
+        if (self.searchBar.text?.count ?? 0) > 0{
+            modelobj = searchModel[indexPath.row]
+        }
+        cell.videoImage.image = getThumbnailImage(forUrl: URL(fileURLWithPath: modelobj.Video_URL))
+        cell.videoDatelbl.text = modelobj.Video_date?.dateValue?.description
         cell.Videotimelbl .text = self.geTimefromSecond(second: Int(modelobj.Video_duration.seconds))
-        cell.videoNamelbl.text = modelobj.Video_name //allUrls[indexPath.row].lastPathComponent
-        cell.videoSizelbl.text = fileSize(fromPath: modelobj.Video_URL) //fileSize(fromPath: allUrls[indexPath.row].path)
+        cell.videoNamelbl.text = modelobj.Video_name
+        cell.videoSizelbl.text = fileSize(fromPath: modelobj.Video_URL)
         cell.btnMore.tag = indexPath.row
         cell.btnMore.addTarget(self, action: #selector(moreVidoOption(sender:)), for: .touchUpInside)
         return cell
     }
-   
+    
     @objc func moreVidoOption(sender: UIButton) {
+        selectedIndex = sender.tag
         let Rename = UIAction(title: "Rename") { _ in
             var text = UITextField()
             let alertController = UIAlertController(title: "Rename", message: "", preferredStyle: .alert)
@@ -145,7 +157,7 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
                 if let value = textfield[0].text {
                     text.becomeFirstResponder()
                     self.model[sender.tag].Video_name = value
-                    self.VideoCollectionView.reloadData()
+                    self.VideoTableView.reloadData()
                 }
             }))
             self.present(alertController, animated: true, completion: nil)
@@ -158,24 +170,44 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
             let videoextension = URL(fileURLWithPath: self.model[sender.tag].Video_URL).pathExtension
             let assetURLStr = URL(string: "assets-library://asset/asset.\(videoextension)?id=\(self.model[sender.tag].assetID)&ext=\(videoextension)")
             PHPhotoLibrary.shared().performChanges({
-                        let imageAssetToDelete = PHAsset.fetchAssets(withALAssetURLs: [assetURLStr!], options: nil)
-                        PHAssetChangeRequest.deleteAssets(imageAssetToDelete)}, completionHandler: {success, error in
-                            if error != nil {
-                                print(success ? "Success" : error!)
-                            }
-                        })
+                                                    let imageAssetToDelete = PHAsset.fetchAssets(withALAssetURLs: [assetURLStr!], options: nil)
+                                                    PHAssetChangeRequest.deleteAssets(imageAssetToDelete)}, completionHandler: {success, error in
+                                                        if error != nil {
+                                                            print(success ? "Success" : error!)
+                                                        }
+                                                    })
+            self.tableView.reloadData()
         }
         
-        let Shate = UIAction(title: "Shate") { _ in
-            print("Shate")}
+        let Shate = UIAction(title: "Share") { _ in
+            let view = UIView()
+            self.share(sender: view)
+        }
         
         let Details = UIAction(title: "Details") { _ in
-              
             self.performSegue(withIdentifier: "videoPopup", sender: self)
         }
         let menu = UIMenu(title: "More", children: [Rename,Hide,Delete,Shate,Details])
         sender.showsMenuAsPrimaryAction = true
         sender.menu = menu
+    }
+    
+    @objc func share(sender:UIView){
+            UIGraphicsBeginImageContext(view.frame.size)
+            view.layer.render(in: UIGraphicsGetCurrentContext()!)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+        let modelobj = model[selectedIndex]
+
+        let textToShare = modelobj.Video_name.description
+        if let myWebsite = URL(string: model[selectedIndex].Video_URL) {
+                let objectsToShare = [textToShare, myWebsite, image ?? #imageLiteral(resourceName: "share")] as [Any]
+                let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+                //Excluded Activities
+                activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
+                activityVC.popoverPresentationController?.sourceView = sender
+                self.present(activityVC, animated: true, completion: nil)
+            }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -193,21 +225,14 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
         }
         if segue.identifier == "videoPopup"{
             let vc = segue.destination as! detailPopup
-            let modelobj = model[selectedIndex]
-            vc.VideoName = model[selectedIndex].Video_name
-            vc.VideoDuration = geTimefromSecond(second: Int(modelobj.Video_duration.seconds))
-            vc.VideoSize = fileSize(fromPath: modelobj.Video_URL)!
+            vc.VideoName =  model[selectedIndex].Video_name
+            vc.VideoDuration = geTimefromSecond(second: Int(model[selectedIndex].Video_duration.seconds))
+            vc.VideoSize = fileSize(fromPath: model[selectedIndex].Video_URL)!
             vc.VideoPath = URL(fileURLWithPath: model[selectedIndex].Video_URL)
-           // vc.VideoResolution =
             vc.VideoModify_date = model[selectedIndex].Video_ModifyDate
         }
     }
-    
-    func resolutionSizeForLocalVideo(url:NSURL) -> CGSize? {
-        guard let track = AVAsset(url: url as URL).tracks(withMediaType: AVMediaType.video).first else { return nil }
-        let size = track.naturalSize.applying(track.preferredTransform)
-        return CGSize(width: fabs(size.width), height: fabs(size.height))
-    }
+
     func geTimefromSecond(second:Int) -> String{
         let (h,m,s) = (second / 3600, (second % 3600) / 60, (second % 3600) % 60)
         let h_string = h < 10 ? "0\(h)" : "\(h)"
@@ -235,6 +260,30 @@ class VideoViewController: UITableViewController, UISearchBarDelegate{
         floatSize = floatSize / 1024
         return String(format: "%.1f GB", floatSize)
     }
-    
 }
 
+extension VideoViewController:UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+       
+        searchModel = self.model.filter({ (obj) -> Bool in
+            return obj.Video_name.range(of: searchText, options: .caseInsensitive) != nil
+        })
+        tableView.reloadData()
+        print(searchModel)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.becomeFirstResponder()
+        searchBar.showsCancelButton = true
+        tableView.reloadData()
+
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        tableView.reloadData()
+
+    }
+}

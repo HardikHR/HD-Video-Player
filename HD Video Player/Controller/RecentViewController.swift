@@ -12,14 +12,17 @@ import VersaPlayer
 
 class RecentViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    
-
     @IBOutlet weak var recenetCollection: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var sideMemu: UIBarButtonItem!
     var selectedIndex = 0
     var model = [VideoModel]()
+    var searchModel = [VideoModel]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         navControl()
         fetchAllVideos()
         navigationController?.navigationBar.tintColor = .white
@@ -29,10 +32,10 @@ class RecentViewController: UIViewController,UICollectionViewDelegate, UICollect
     
     @IBAction func sideMenu(_ sender: UIBarButtonItem) {
     }
-    
     @IBAction func moreItem(_ sender: UIBarButtonItem) {
     }
     @IBAction func refresh(_ sender: UIBarButtonItem) {
+        recenetCollection.reloadData()
     }
     @IBAction func search(_ sender: UIBarButtonItem) {
     }
@@ -104,12 +107,18 @@ class RecentViewController: UIViewController,UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model.count
-    }
+        if (self.searchBar.text?.count ?? 0) > 0{
+            return searchModel.count
+        }else{
+            return model.count
+        }    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recentCell", for: indexPath) as! RecentViewCell
-        let modelobj = model[indexPath.row]
+        var modelobj = model[indexPath.row]
+        if (self.searchBar.text?.count ?? 0) > 0{
+            modelobj = searchModel[indexPath.row]
+        }
         cell.videoImg.image = getThumbnailImage(forUrl: URL(fileURLWithPath: modelobj.Video_URL)) //allUrls[indexPath.row]
         cell.videoDate.text = modelobj.Video_date?.dateValue?.description //videoDate[indexPath.row]?.dateValue?.debugDescription
         cell.videoTime .text = self.geTimefromSecond(second: Int(modelobj.Video_duration.seconds))
@@ -200,5 +209,27 @@ class RecentViewController: UIViewController,UICollectionViewDelegate, UICollect
         }// GB
         floatSize = floatSize / 1024
         return String(format: "%.1f GB", floatSize)
+    }
+}
+extension RecentViewController:UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchModel = self.model.filter({ (obj) -> Bool in
+            return obj.Video_name.range(of: searchText, options: .caseInsensitive) != nil
+        })
+        recenetCollection.reloadData()
+        print(searchModel)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+        recenetCollection.reloadData()
+        searchBar.becomeFirstResponder()
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        recenetCollection.reloadData()
     }
 }

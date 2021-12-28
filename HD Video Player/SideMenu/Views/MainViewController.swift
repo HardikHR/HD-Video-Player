@@ -21,10 +21,8 @@ class MainViewController: UIViewController, UITabBarDelegate {
     private var revealSideMenuOnTop: Bool = true
     var gestureEnabled: Bool = true
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
         self.sideMenuShadowView = UIView(frame: self.view.bounds)
         self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.sideMenuShadowView.backgroundColor = .black
@@ -128,7 +126,6 @@ extension MainViewController: SideMenuViewControllerDelegate {
         default:
             break
         }
-        // Collapse side menu with animation
         DispatchQueue.main.async { self.sideMenuState(expanded: false) }
     }
     

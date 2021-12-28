@@ -5,11 +5,15 @@
 //  Created by macOS on 29/10/21.
 //
 
+
 import UIKit
+import Photos
+
 class FolderViewController: UITableViewController {
     
     @IBOutlet var folderTableview: UITableView!
     @IBOutlet weak var menu: UIBarButtonItem!
+    let foldermodel = [folderModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +63,43 @@ class FolderViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FolderViewCell", for: indexPath) as! FolderViewCell
-        cell.backgroundColor = .black
         return cell
     }
+    
+//MARK:- Get Folder -
+
 }
+
+class CustomPhotoAlbum {
+
+    static let albumName = "Flashpod"
+    static let sharedInstance = CustomPhotoAlbum()
+    var assetCollection: PHAssetCollection!
+
+    init() {
+        func fetchAssetCollectionForAlbum() -> PHAssetCollection! {
+            let fetchOptions = PHFetchOptions()
+            fetchOptions.predicate = NSPredicate(format: "title = %@", CustomPhotoAlbum.albumName)
+            let collection = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .any, options: fetchOptions)
+            if let firstObject: AnyObject = collection.firstObject {
+                print(firstObject)
+                return collection.firstObject!
+            }
+            return nil
+        }
+
+        if let assetCollection = fetchAssetCollectionForAlbum() {
+            self.assetCollection = assetCollection
+            return
+        }
+
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetCollectionChangeRequest.creationRequestForAssetCollection(withTitle: CustomPhotoAlbum.albumName)
+        }) { success, _ in
+            if success {
+                self.assetCollection = fetchAssetCollectionForAlbum()
+            }
+        }
+    }
+}
+

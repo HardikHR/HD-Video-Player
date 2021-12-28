@@ -38,4 +38,7 @@ class detailPopup: UIViewController {
         
     }
 
+    @IBAction func close(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

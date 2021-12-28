@@ -29,7 +29,9 @@ struct VideoModel {
     var Video_duration : CMTime = CMTime()
     var Video_resolution : String = ""
     var Video_ModifyDate : Date? = Date()
-
-    
     var assetID : String = ""
+}
+
+struct folderModel {
+    var foler_image : UIImage?
 }

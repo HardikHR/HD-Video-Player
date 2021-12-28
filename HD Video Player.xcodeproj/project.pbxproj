@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				22D9FDD92776D4560075515B /* VideoViewController.swift */,
-				22D9FDD82776D4560075515B /* FolderViewController.swift */,
 				221F26EE2774738000CA7E63 /* RecentViewController.swift */,
+				22D9FDD82776D4560075515B /* FolderViewController.swift */,
 				22D9FDDA2776D4570075515B /* HIdeVideoViewController.swift */,
 				22D9FDD72776D4560075515B /* MainTabBarViewController.swift */,
 				22D9FDDB2776D4570075515B /* VideoPlay.swift */,
