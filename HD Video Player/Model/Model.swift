@@ -33,5 +33,11 @@ struct VideoModel {
 }
 
 struct folderModel {
-    var foler_image : UIImage?
+    var albumTitle:String = "Untitled"
+    var albumCount:String = "0 photos"
 }
+
+//func update(title: String?, count: Int) {
+//  albumTitle.text = title ?? "Untitled"
+//  albumCount.text = "\(count.description) \(count == 1 ? "photo" : "photos")"
+//}

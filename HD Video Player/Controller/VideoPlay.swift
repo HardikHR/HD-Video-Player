@@ -15,7 +15,9 @@ class VideoPlay: UIViewController {
     @IBOutlet weak var controls: VersaPlayerControls!
     var url : URL!
     var titlename:String!
-    
+    var selectedIndex = 0
+    var Model = [VideoModel]()
+
     override func viewDidLoad() {
         title = titlename
         super.viewDidLoad()
@@ -23,5 +25,26 @@ class VideoPlay: UIViewController {
         playerView.use(controls: controls)
         let item = VersaPlayerItem(url: url)
         playerView.set(item: item)
+        
+
+    }
+    @IBAction func btnPrev(sender: UIButton) {
+        if selectedIndex > 0 {
+            selectedIndex -= 1
+            url = URL(fileURLWithPath: Model[selectedIndex].Video_URL)
+            playerView.use(controls: controls)
+            let item = VersaPlayerItem(url: url)
+            playerView.set(item: item)
+        }
+    }
+    
+    @IBAction func btnForw(sender: UIButton) {
+        if selectedIndex < Model.count {
+            selectedIndex += 1
+            url = URL(fileURLWithPath: Model[selectedIndex].Video_URL)
+            playerView.use(controls: controls)
+            let item = VersaPlayerItem(url: url)
+            playerView.set(item: item)
+        }
     }
 }

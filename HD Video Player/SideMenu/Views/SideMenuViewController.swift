@@ -47,6 +47,7 @@ class SideMenuViewController: UIViewController {
 // MARK: - UITableViewDelegate -
 
 extension SideMenuViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
@@ -63,7 +64,6 @@ extension SideMenuViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuCell.identifier, for: indexPath) as? SideMenuCell else { fatalError("xib doesn't exist") }
         cell.iconImageView.image = self.menu[indexPath.row].icon
         cell.titleLabel.text = self.menu[indexPath.row].title
-        // Highlighted color
         let myCustomSelectionColorView = UIView()
         myCustomSelectionColorView.backgroundColor = #colorLiteral(red: 0.6196078431, green: 0.1098039216, blue: 0.2509803922, alpha: 1)
         cell.selectedBackgroundView = myCustomSelectionColorView

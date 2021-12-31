@@ -7,6 +7,7 @@
 
 import SafariServices
 import UIKit
+import ContextMenu
 
 class MainViewController: UIViewController, UITabBarDelegate {
 
@@ -56,7 +57,8 @@ class MainViewController: UIViewController, UITabBarDelegate {
         panGestureRecognizer.delegate = self
         view.addGestureRecognizer(panGestureRecognizer)
        showViewController(viewController: UINavigationController.self, storyboardId: "videoID")
-    }
+}
+
      
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)

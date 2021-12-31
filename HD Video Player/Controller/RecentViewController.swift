@@ -134,36 +134,20 @@ class RecentViewController: UIViewController,UICollectionViewDelegate, UICollect
     }
     
     @objc func renameAlert(sender: UIButton) {
-        let Rename = UIAction(title: "Rename") { _ in
-            var text = UITextField()
-            let alertController = UIAlertController(title: "Rename", message: "", preferredStyle: .alert)
-            alertController.addTextField { (textfield) in
-                text = textfield
-                textfield.returnKeyType = .continue
-                textfield.text = self.model[sender.tag].Video_name
-            }
-            alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            alertController.addAction(UIAlertAction(title: "Rename", style: .default, handler: { (alert) in
-                guard let textfield = alertController.textFields else {
-                    return
-                }
-                if let value = textfield[0].text {
-                    text.becomeFirstResponder()
-                    self.model[sender.tag].Video_name = value
-                    self.recenetCollection.reloadData()
-                }
-            }))
-            self.present(alertController, animated: true, completion: nil)
+        
+        let Short_By = UIAction(title: "Short By") { _ in
+            
+            print("shortBy")}
+        let View_As = UIAction(title: "View As") { _ in
+            print("ViewAs")}
+        
+        let favoriteAction = UIAction(title: "Favorite", image: UIImage(systemName: "star")) { (_) in
         }
-        let Hide = UIAction(title: "Hide") { _ in
-            print("Hide")}
-        let Delete = UIAction(title: "Delete") { _ in
-            print("Delete")}
-        let Shate = UIAction(title: "Shate") { _ in
-            print("Shate")}
-        let Details = UIAction(title: "Details") { _ in
-            print("Details")}
-        let menu = UIMenu(title: "More", children: [Rename,Hide,Delete,Shate,Details])
+        let editAction = UIAction(title: "Edit", image: UIImage(systemName: "pencil")) { (_) in
+        }
+        let submenu = UIMenu(title: "", options: .displayInline, children: [favoriteAction, editAction])
+
+        let menu = UIMenu(title: "More", children: [Short_By,View_As])
         sender.showsMenuAsPrimaryAction = true
         sender.menu = menu
     }

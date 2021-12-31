@@ -10,6 +10,6 @@ target 'HD Video Player' do
   pod 'VersaPlayer'
   pod 'SwiftyContextMenu'
   pod 'SideMenuSwift'
-
+  pod 'ContextMenu'
 
 end

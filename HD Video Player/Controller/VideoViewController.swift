@@ -9,6 +9,7 @@ import UIKit
 import Photos
 import AVKit
 import VersaPlayer
+import ContextMenu
 
 class VideoViewController: UITableViewController{
     
@@ -32,18 +33,20 @@ class VideoViewController: UITableViewController{
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
     }
     
-    @IBAction func Video_searchBar(_ sender: UIBarButtonItem) {
+    override func viewDidAppear(_ animated: Bool) {
+        VideoTableView.reloadData()
     }
-    @IBAction func Video_refresh(_ sender: UIBarButtonItem) {
+    
+    @IBAction func Video_searchBar(_ sender: UIBarButtonItem){
+    }
+    @IBAction func Video_refresh(_ sender: UIBarButtonItem){
         self.VideoTableView.reloadData()
     }
-    @IBAction func Video_moreMenu(_ sender: UIBarButtonItem) {
-        let ShortBy = UIAction(title: "Short By") { _ in
-            print("Short By")}
-        let ViewAs = UIAction(title: "View As") { _ in
-            print("View As")}
-        let menu = UIMenu(title: "More", children: [ShortBy,ViewAs])
-        sender.menu = menu
+    @IBAction func Video_moreMenu(_ sender: UIButton) {
+        ContextMenu.shared.show(sourceViewController: self, viewController: MenuViewController(),options: ContextMenu.Options(
+                                    containerStyle: ContextMenu.ContainerStyle(
+                                        backgroundColor: UIColor(red: 41/255.0, green: 45/255.0, blue: 53/255.0, alpha: 1)
+                                    )))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -115,7 +118,7 @@ class VideoViewController: UITableViewController{
         self.navigationItem.titleView = navView
         navView.sizeToFit()
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (self.searchBar.text?.count ?? 0) > 0{
             return searchModel.count
@@ -222,6 +225,8 @@ class VideoViewController: UITableViewController{
             let vc = segue.destination as! VideoPlay
             vc.url = URL(fileURLWithPath: model[selectedIndex].Video_URL)
             vc.titlename = model[selectedIndex].Video_name
+            vc.selectedIndex = selectedIndex
+            vc.Model = self.model
         }
         if segue.identifier == "videoPopup"{
             let vc = segue.destination as! detailPopup
